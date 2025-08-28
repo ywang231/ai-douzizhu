@@ -1,0 +1,11 @@
+[project]
+name = "poker-game-emulator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiohttp>=3.12.15",
+    "dotenv>=0.9.9",
+    "openai>=1.102.0",
+]

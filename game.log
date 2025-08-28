@@ -1,0 +1,54 @@
+2025-08-26 23:15:44:381727 - [DEBUG]: Bidding started
+
+2025-08-26 23:15:44:381852 - [DEBUG]: Player 3 is making a bidding decision.
+2025-08-26 23:15:46:382704 - [DEBUG]: Player 3 choose to pass
+2025-08-26 23:15:46:383373 - [DEBUG]: Player 1 is making a bidding decision.
+2025-08-26 23:15:48:384815 - [DEBUG]: Player 1 choose to bid with 3 points
+2025-08-26 23:15:48:385243 - [DEBUG]: Player 3 is making a bidding decision for the final round 
+2025-08-26 23:15:50:386337 - [DEBUG]: Player 3 final bid: 6 points
+2025-08-26 23:15:50:386977 - [DEBUG]: Final landlord is Player 3
+2025-08-26 23:15:50:387590 - [DEBUG]: Bidding END
+
+2025-08-26 23:16:28:200835 - [DEBUG]: Bidding started
+
+2025-08-26 23:16:28:200988 - [DEBUG]: Player 1 is making a bidding decision.
+2025-08-26 23:16:30:202558 - [DEBUG]: Player 1 choose to pass
+2025-08-26 23:16:30:203272 - [DEBUG]: Player 2 is making a bidding decision.
+2025-08-26 23:16:32:204339 - [DEBUG]: Player 2 choose to bid with 2 points
+2025-08-26 23:16:32:204620 - [DEBUG]: Player 3 is making a bidding decision.
+2025-08-26 23:16:34:206125 - [DEBUG]: Player 3 choose to pass
+2025-08-26 23:16:34:206723 - [DEBUG]: Player 1 is making a bidding decision for the final round 
+2025-08-26 23:16:36:208219 - [DEBUG]: Player 1 final bid: 4 points
+2025-08-26 23:16:36:208876 - [DEBUG]: Final landlord is Player 1
+2025-08-26 23:16:36:209443 - [DEBUG]: Bidding END
+2025-08-27 11:12:26:563176 - [DEBUG]: Bidding started
+
+2025-08-27 11:12:26:563393 - [DEBUG]: Player 1 is making a bidding decision.
+2025-08-27 11:12:28:564236 - [DEBUG]: Player 1 choose to bid with 1 point
+2025-08-27 11:12:28:564898 - [DEBUG]: Player 2 is making a bidding decision.
+2025-08-27 11:12:30:566822 - [DEBUG]: Player 2 choose to pass
+2025-08-27 11:12:30:567491 - [DEBUG]: Player 3 is making a bidding decision.
+2025-08-27 11:12:32:569338 - [DEBUG]: Player 3 choose to pass
+2025-08-27 11:12:32:569735 - [DEBUG]: Final landlord is Player 1
+2025-08-27 11:12:32:570371 - [DEBUG]: Bidding END
+2025-08-27 11:34:34:108791 - [DEBUG]: Bidding started
+
+2025-08-27 11:34:34:108921 - [DEBUG]: Player 2 is making a bidding decision.
+2025-08-27 11:34:36:110474 - [DEBUG]: Player 2 choose to pass
+2025-08-27 11:34:36:111044 - [DEBUG]: Player 3 is making a bidding decision.
+2025-08-27 11:34:38:112411 - [DEBUG]: Player 3 choose to pass
+2025-08-27 11:34:38:113028 - [DEBUG]: Player 1 is making a bidding decision.
+2025-08-27 11:34:40:114445 - [DEBUG]: Player 1 choose to bid with 1 point
+2025-08-27 11:34:40:114877 - [DEBUG]: Player 2 is making a bidding decision for the final round 
+2025-08-27 11:34:42:116474 - [DEBUG]: Player 2 choose to pass
+2025-08-27 11:34:42:116801 - [DEBUG]: Final landlord is Player 1
+2025-08-27 11:34:42:117030 - [DEBUG]: Bidding END
+2025-08-27 22:31:41:058439 - [DEBUG]: Logger initialized
+2025-08-27 22:31:41:058561 - [DEBUG]: This is a test log message
+2025-08-27 22:31:41:058606 - [DEBUG]: This is another test log message
+2025-08-27 22:32:46:939702 - [DEBUG]: Logger initialized
+2025-08-27 22:32:46:939821 - [DEBUG]: This is a test log message
+2025-08-27 22:32:46:940113 - [DEBUG]: This is another test log message
+2025-08-27 22:33:08:350664 - [DEBUG]: Logger initialized
+2025-08-27 22:33:08:350781 - [DEBUG]: This is a test log message
+2025-08-27 22:33:08:351053 - [DEBUG]: This is another test log message
