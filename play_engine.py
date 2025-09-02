@@ -5,7 +5,6 @@
 # pylint: disable=missing-class-docstring
 # pylint: disable=too-many-instance-attributes
 
-
 import random
 from player import Player
 from logger import Logging
@@ -37,12 +36,12 @@ class Doudizhu:
         self.potential_idx_ = -1
         self.bid_score_ = 0
         self.bidding_history_ = []
+        self.players_ = []
 
-    def _setup_players(self):
-        '''Sets up the players for the game.'''
-        self.players_ = [Player("Player 1"),
-                         Player("Player 2"),
-                         Player("Player 3")]
+    def player_join(self, player: Player):
+        Logging(f"Player {player.name} joined the game.")
+        self.players_.append(player)
+        Logging(f"Current players: {[p.name for p in self.players_]}")
 
     async def _landlord_bidding(self):
         assert len(self.players_) == 3, "There must be exactly 3 players."
@@ -59,7 +58,7 @@ class Doudizhu:
             curr_player = self.players_[self.curr_idx_]
 
             # Get the bidding result from the current player
-            bid_res = await curr_player.landlord_bidding(min_score=self.bid_score_ + 1)
+            bid_res = await curr_player.landlord_bidding(bidding_history=self.bidding_history_)
             # Record the bidding history
             self.bidding_history_.append((self.curr_idx_, bid_res))
 
@@ -74,6 +73,7 @@ class Doudizhu:
         # Someone bade, and it's not the first player
         if self.potential_idx_ not in (-1, self.first_idx_):
             final = await self.players_[self.first_idx_].final_double_bid(self.bid_score_ * 2)
+            self.bidding_history_.append((self.first_idx_, final))
             if final > 0:
                 self.potential_idx_ = self.first_idx_
                 self.bid_score_ = final
@@ -101,29 +101,39 @@ class Doudizhu:
             player.accept_hands(self.deck_[0:17])
             self.deck_ = self.deck_[17:]
 
+        # Print hand each player has
+        for player in self.players_:
+            Logging(f"{player.name} hands: {player.hand}")
+        # Print the three landlord cards
+        Logging(f"Landlord cards: {self.deck_}")
+
     @staticmethod
     def create_deck():
         '''
         Return a new deck of cards.
-        each card is represented as a tuple (rank, suit, rank_order)
+        each card is represented as a tuple (face, rank, suit)
         '''
         suits = [0, 1, 2, 3]  # '♠', '♥', '♣', '♦'
-        ranks = ['3', '4', '5', '6', '7',
+        faces = ['3', '4', '5', '6', '7',
                  '8', '9', '10', 'J', 'Q', 'K', 'A', '2']
-        rank_order = {rank: i for i, rank in enumerate(ranks)}
-        deck = [(rank, suit, rank_order[rank])
+        ranks = {rank: i for i, rank in enumerate(faces)}
+        deck = [(rank, suit, ranks[rank])
                 for suit in suits for rank in ranks]
 
         # add jokers
-        deck.append(('Joker', 4, len(ranks)))  # Black Joker
-        deck.append(('Joker', 5, len(ranks) + 1))  # Red Joker
+        deck.append(("Black Joker", -1, len(ranks)))  # Black Joker
+        deck.append(("Red Joker", -1, len(ranks) + 1))  # Red Joker
 
         return deck
 
     # The main entry point to run the game
     async def run(self):
-        '''Runs the Doudizhu game.'''
-        self._setup_players()
-
         if not self.is_start_:
             await self._start_game()
+
+
+if __name__ == "__main__":
+    Logging("Game started")
+    Logging(Doudizhu.create_deck())
+
+    # asyncio.run(Doudizhu().run())

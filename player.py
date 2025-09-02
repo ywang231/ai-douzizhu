@@ -5,9 +5,12 @@
 # pylint: disable=missing-class-docstring
 
 import asyncio
+import json
 import random
 from typing import Callable
 from logger import Logging
+from prompt import Prompt
+from utility import extract_json
 
 
 class Player:
@@ -23,7 +26,6 @@ class Player:
         self.hand_ = []
         self.cards_played_ = []
         self.is_landlord_ = False
-        self.brain_ = None  # The AI brain for the player
 
     @property
     def brain(self):
@@ -37,19 +39,45 @@ class Player:
         '''Accepts the initial hands for the player.'''
         self.hand_ = hands
 
+    @property
+    def hand(self):
+        return self.hand_
+
     def append_landlord_cards(self, cards: list):
         '''Appends the landlord cards to the player's hand.'''
         self.hand_.extend(cards)
         self.is_landlord_ = True
 
-    async def landlord_bidding(self, min_score: int = 1):
+    async def landlord_bidding(self, bidding_history: list):
         '''Makes a bidding decision for the player.'''
         Logging(f"{self.name} is making a bidding decision.")
 
-        await asyncio.sleep(2)  # Simulate thinking time
-        score_bid = random.randint(min_score, 3)
-        # random pick either 0 or score_bid
-        final_bid = random.choice([0, score_bid])
+        Logging(
+            f"User prompts: {Prompt().get_bidding_prompt(bidding_history=bidding_history,
+                                                         card_combination=self.hand_)}")
+        result = await self.brain_([
+            {
+                "role": "system",
+                "content": Prompt().get_system_prompt()
+            },
+            {
+
+                "role": "user",
+                "content": Prompt().get_bidding_prompt(bidding_history=bidding_history,
+                                                       card_combination=self.hand_)
+            }
+        ])
+
+        Logging(f"current brain is: {self.brain_}")
+        Logging(f"{self.name} bidding result: {result} \n")
+
+        extracted_json = extract_json(result.strip())
+        if extracted_json is None:
+            raise ValueError("Failed to extract JSON from result.")
+        Logging(f"extracted json string is: {extracted_json}")
+        json_result = json.loads(extracted_json)
+        Logging(f"After parsing the bidding result: {json_result}")
+        final_bid = json_result["action"]
 
         if final_bid > 0:
             Logging(
