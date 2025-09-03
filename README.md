@@ -12,3 +12,4 @@ FILE_LOG_SWITCH=true
 OPEN_ROUTER_API_KEY=sk-or-xxxxxxxxxxxxxxxx
 5. Set up an OpenRouter account [here](https://openrouter.ai/)
 6. Obtain API key from OpenRouter and replace the `OPEN_ROUTER_API_KEY` in `.env `.
+7. `uv run main.py`
