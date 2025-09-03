@@ -2287,3 +2287,1459 @@ The 'reason' field includes the details of your decision-making process in a few
 2025-09-02 13:01:41:051297 - [DEBUG]: Player 1 final bid: 6 points
 2025-09-02 13:01:41:051516 - [DEBUG]: Final landlord is Player 1
 2025-09-02 13:01:41:051811 - [DEBUG]: Bidding END
+2025-09-02 13:16:21:967537 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 13:16:21:967688 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 13:16:21:967951 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 13:16:21:967989 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 13:16:21:968026 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 13:16:21:968061 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 13:16:21:968103 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 13:16:21:968169 - [DEBUG]: Player 1 hands: [('9', 1, 6), ('3', 3, 0), ('2', 1, 12), ('6', 3, 3), ('10', 2, 7), ('J', 2, 8), ('7', 1, 4), ('7', 3, 4), ('J', 1, 8), ('J', 0, 8), ('6', 2, 3), ('K', 3, 10), ('5', 1, 2), ('7', 0, 4), ('K', 1, 10), ('A', 1, 11), ('9', 3, 6)]
+2025-09-02 13:16:21:968213 - [DEBUG]: Player 2 hands: [('3', 1, 0), ('2', 3, 12), ('4', 3, 1), ('Q', 3, 9), ('8', 2, 5), ('4', 0, 1), ('A', 2, 11), ('9', 2, 6), ('4', 2, 1), ('2', 2, 12), ('Q', 0, 9), ('10', 1, 7), ('5', 3, 2), ('10', 0, 7), ('4', 1, 1), ('7', 2, 4), ('9', 0, 6)]
+2025-09-02 13:16:21:968255 - [DEBUG]: Player 3 hands: [('J', 3, 8), ('10', 3, 7), ('K', 0, 10), ('5', 2, 2), ('A', 0, 11), ('Q', 1, 9), ('3', 2, 0), ('8', 3, 5), ('Red Joker', -1, 14), ('3', 0, 0), ('8', 1, 5), ('8', 0, 5), ('K', 2, 10), ('Black Joker', -1, 13), ('Q', 2, 9), ('6', 0, 3), ('5', 0, 2)]
+2025-09-02 13:16:21:968288 - [DEBUG]: Landlord cards: [('2', 0, 12), ('A', 3, 11), ('6', 1, 3)]
+2025-09-02 13:16:21:968328 - [DEBUG]: Bidding started
+
+2025-09-02 13:16:21:968367 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 13:16:21:968418 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('9', 1, 6), ('3', 3, 0), ('2', 1, 12), ('6', 3, 3), ('10', 2, 7), ('J', 2, 8), ('7', 1, 4), ('7', 3, 4), ('J', 1, 8), ('J', 0, 8), ('6', 2, 3), ('K', 3, 10), ('5', 1, 2), ('7', 0, 4), ('K', 1, 10), ('A', 1, 11), ('9', 3, 6)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:16:23:623267 - [DEBUG]: current brain is: <function llama_3_3 at 0x107e74cc0>
+2025-09-02 13:16:23:623736 - [DEBUG]: Player 1 bidding result: {"action": 2, "reason": "I have a good set of cards including pairs, triples, and high cards, becoming the landlord can help me get more points if I win the game, so I choose to bid 2 points to take the risk and potentially gain more."} 
+
+2025-09-02 13:16:23:624342 - [DEBUG]: current brain is: <function llama_3_3 at 0x107e74cc0>
+2025-09-02 13:16:23:624437 - [DEBUG]: Player 1 bidding result: {"action": 2, "reason": "I have a good set of cards including pairs, triples, and high cards, becoming the landlord can help me get more points if I win the game, so I choose to bid 2 points to take the risk and potentially gain more."} 
+
+2025-09-02 13:16:23:624550 - [DEBUG]: extracted json string is: {"action": 2, "reason": "I have a good set of cards including pairs, triples, and high cards, becoming the landlord can help me get more points if I win the game, so I choose to bid 2 points to take the risk and potentially gain more."}
+2025-09-02 13:16:23:624656 - [DEBUG]: After parsing the bidding result: {'action': 2, 'reason': 'I have a good set of cards including pairs, triples, and high cards, becoming the landlord can help me get more points if I win the game, so I choose to bid 2 points to take the risk and potentially gain more.'}
+2025-09-02 13:16:23:624734 - [DEBUG]: Player 1 choose to bid with 2 points
+2025-09-02 13:16:23:624823 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 13:16:23:624938 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 2 points.
+Your cards are: [('3', 1, 0), ('2', 3, 12), ('4', 3, 1), ('Q', 3, 9), ('8', 2, 5), ('4', 0, 1), ('A', 2, 11), ('9', 2, 6), ('4', 2, 1), ('2', 2, 12), ('Q', 0, 9), ('10', 1, 7), ('5', 3, 2), ('10', 0, 7), ('4', 1, 1), ('7', 2, 4), ('9', 0, 6)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:16:35:400063 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x107d3e980>
+2025-09-02 13:16:35:400716 - [DEBUG]: Player 2 bidding result: Alright, let's see. I'm the second bidder, and the current highest bid is 2 points. My cards are somewhat mixed. I have a couple of high cards like the two 2s and an A, but the rest are not too strong. There's a lot of 4s, which could form a bomb, but not sure if that's enough. 
+
+If I bid 3 points now, I could become the landlord, but looking at my hand, I don't have a very strong set of cards. I don't have many high pairs or triples, and my straights are limited. The two 2s and the ace are good, but the rest are lower cards. Plus, I have a 3, which is the weakest card. 
+
+The risk of bidding higher is that if I become the landlord and lose, I'll lose more points. Since the current bid is 2, and I don't feel confident enough to go to 3, maybe it's better to pass. Let the next player decide or let the first player have the final say. 
+
+I could consider bidding 2 to match, but that might not make sense since the current highest is already 2. The next step would be to go to 3, but without a stronger hand, it's risky. 
+
+So, the safest move is to pass and see what happens. Better not to take unnecessary risks with this hand.
+{ "action": 0, "reason": "My hand lacks strong combinations (only one potential bomb with four 4s) and high-value cards (only two 2s and one A). Bidding higher (3 points) risks losing more points as landlord with this mediocre hand. Passing is safer." } 
+
+2025-09-02 13:16:35:401262 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x107d3e980>
+2025-09-02 13:16:35:401564 - [DEBUG]: Player 2 bidding result: Alright, let's see. I'm the second bidder, and the current highest bid is 2 points. My cards are somewhat mixed. I have a couple of high cards like the two 2s and an A, but the rest are not too strong. There's a lot of 4s, which could form a bomb, but not sure if that's enough. 
+
+If I bid 3 points now, I could become the landlord, but looking at my hand, I don't have a very strong set of cards. I don't have many high pairs or triples, and my straights are limited. The two 2s and the ace are good, but the rest are lower cards. Plus, I have a 3, which is the weakest card. 
+
+The risk of bidding higher is that if I become the landlord and lose, I'll lose more points. Since the current bid is 2, and I don't feel confident enough to go to 3, maybe it's better to pass. Let the next player decide or let the first player have the final say. 
+
+I could consider bidding 2 to match, but that might not make sense since the current highest is already 2. The next step would be to go to 3, but without a stronger hand, it's risky. 
+
+So, the safest move is to pass and see what happens. Better not to take unnecessary risks with this hand.
+{ "action": 0, "reason": "My hand lacks strong combinations (only one potential bomb with four 4s) and high-value cards (only two 2s and one A). Bidding higher (3 points) risks losing more points as landlord with this mediocre hand. Passing is safer." } 
+
+2025-09-02 13:16:35:401889 - [DEBUG]: extracted json string is: { "action": 0, "reason": "My hand lacks strong combinations (only one potential bomb with four 4s) and high-value cards (only two 2s and one A). Bidding higher (3 points) risks losing more points as landlord with this mediocre hand. Passing is safer." }
+2025-09-02 13:16:35:402097 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'My hand lacks strong combinations (only one potential bomb with four 4s) and high-value cards (only two 2s and one A). Bidding higher (3 points) risks losing more points as landlord with this mediocre hand. Passing is safer.'}
+2025-09-02 13:16:35:402241 - [DEBUG]: Player 2 choose to pass
+2025-09-02 13:16:35:402384 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 13:16:35:402545 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 0 points.
+Your cards are: [('J', 3, 8), ('10', 3, 7), ('K', 0, 10), ('5', 2, 2), ('A', 0, 11), ('Q', 1, 9), ('3', 2, 0), ('8', 3, 5), ('Red Joker', -1, 14), ('3', 0, 0), ('8', 1, 5), ('8', 0, 5), ('K', 2, 10), ('Black Joker', -1, 13), ('Q', 2, 9), ('6', 0, 3), ('5', 0, 2)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:16:37:076320 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x107e74a40>
+2025-09-02 13:16:37:076646 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a Black Joker, and a triple 8s. This gives me good potential for bombs and strong combinations, making it a good decision to bid the maximum 3 points to become the Landlord."
+}
+``` 
+
+2025-09-02 13:16:37:076950 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x107e74a40>
+2025-09-02 13:16:37:077102 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a Black Joker, and a triple 8s. This gives me good potential for bombs and strong combinations, making it a good decision to bid the maximum 3 points to become the Landlord."
+}
+``` 
+
+2025-09-02 13:16:37:077223 - [DEBUG]: extracted json string is: {
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a Black Joker, and a triple 8s. This gives me good potential for bombs and strong combinations, making it a good decision to bid the maximum 3 points to become the Landlord."
+}
+2025-09-02 13:16:37:077322 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I have a strong hand with a Red Joker, a Black Joker, and a triple 8s. This gives me good potential for bombs and strong combinations, making it a good decision to bid the maximum 3 points to become the Landlord.'}
+2025-09-02 13:16:37:077405 - [DEBUG]: Player 3 choose to bid with 3 points
+2025-09-02 13:16:37:077487 - [DEBUG]: Player 1 is making a bidding decision for the final round 
+2025-09-02 13:16:39:078370 - [DEBUG]: Player 1 final bid: 6 points
+2025-09-02 13:16:39:079037 - [DEBUG]: Final landlord is Player 1
+2025-09-02 13:16:39:079251 - [DEBUG]: Bidding END
+2025-09-02 13:24:42:778997 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 13:24:42:779139 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 13:24:42:779383 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 13:24:42:779424 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 13:24:42:779457 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 13:24:42:779489 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 13:24:42:779521 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 13:24:42:779581 - [DEBUG]: Player 1 hands: [('Red Joker', -1, 14), ('5', 3, 2), ('9', 1, 6), ('K', 3, 10), ('Q', 2, 9), ('A', 1, 11), ('3', 3, 0), ('8', 2, 5), ('Black Joker', -1, 13), ('9', 3, 6), ('10', 0, 7), ('A', 2, 11), ('Q', 1, 9), ('2', 0, 12), ('7', 1, 4), ('6', 3, 3), ('4', 3, 1)]
+2025-09-02 13:24:42:779614 - [DEBUG]: Player 2 hands: [('2', 3, 12), ('7', 3, 4), ('Q', 3, 9), ('5', 1, 2), ('6', 0, 3), ('8', 0, 5), ('7', 0, 4), ('2', 1, 12), ('9', 2, 6), ('4', 0, 1), ('K', 2, 10), ('10', 1, 7), ('J', 0, 8), ('K', 1, 10), ('8', 1, 5), ('10', 3, 7), ('8', 3, 5)]
+2025-09-02 13:24:42:779648 - [DEBUG]: Player 3 hands: [('4', 2, 1), ('5', 2, 2), ('6', 1, 3), ('2', 2, 12), ('5', 0, 2), ('A', 3, 11), ('3', 1, 0), ('10', 2, 7), ('4', 1, 1), ('J', 2, 8), ('K', 0, 10), ('6', 2, 3), ('7', 2, 4), ('J', 1, 8), ('9', 0, 6), ('A', 0, 11), ('J', 3, 8)]
+2025-09-02 13:24:42:779678 - [DEBUG]: Landlord cards: [('Q', 0, 9), ('3', 2, 0), ('3', 0, 0)]
+2025-09-02 13:24:42:779709 - [DEBUG]: Bidding started
+
+2025-09-02 13:24:42:779742 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 13:24:42:779779 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('2', 3, 12), ('7', 3, 4), ('Q', 3, 9), ('5', 1, 2), ('6', 0, 3), ('8', 0, 5), ('7', 0, 4), ('2', 1, 12), ('9', 2, 6), ('4', 0, 1), ('K', 2, 10), ('10', 1, 7), ('J', 0, 8), ('K', 1, 10), ('8', 1, 5), ('10', 3, 7), ('8', 3, 5)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:24:55:549370 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10ba7e980>
+2025-09-02 13:24:55:549837 - [DEBUG]: Player 2 bidding result: Alright, let me think through this. I'm the first bidder in the landlord bidding phase, and I have these 17 cards in my hand. 
+
+First, I'll assess the strength of my hand. I see I have two '2's, which are high-value cards, and a couple of Kings ('K's), Queens ('Q'), and Jacks ('J'). These are all strong cards, but I don't have any bombs (four of a kind) or jokers. My pairs and triples are limited—just two '8's, two '10's, two 'K's, and two '7's, but no triples. My straight potential is low since the sequence isn't long or strong enough. 
+
+Given that, bidding high might be risky because bombs are powerful, and I don't have any. Also, without jokers, my ability to counter a bomb from the farmers is limited. However, having two '2's is a plus since they're the highest individual cards after the jokers. 
+
+Considering the strategy tips, becoming the landlord is more risky if I don't have a strong hand. With only a moderate hand, bidding too high could lead to losing more points. But since I'm the first bidder, I could try a low bid to see if others pass, and maybe secure the landlord position with minimal points. 
+
+I think bidding 1 point is a safe start. It's low enough to avoid big losses if I lose, but still gives me a chance to take the landlord role if others pass. If someone else bids higher, I can reassess, but starting with 1 point seems reasonable. 
+
+So, my action will be to bid 1 point, hoping to either secure the landlord position cheaply or gauge the others' hands based on their bids.
+{ "action": 1, "reason": "The hand has two '2's and decent high cards (K, Q, J), but lacks bombs or jokers. A moderate bid of 1 point tests the field without overcommitting." } 
+
+2025-09-02 13:24:55:550425 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10ba7e980>
+2025-09-02 13:24:55:550570 - [DEBUG]: Player 2 bidding result: Alright, let me think through this. I'm the first bidder in the landlord bidding phase, and I have these 17 cards in my hand. 
+
+First, I'll assess the strength of my hand. I see I have two '2's, which are high-value cards, and a couple of Kings ('K's), Queens ('Q'), and Jacks ('J'). These are all strong cards, but I don't have any bombs (four of a kind) or jokers. My pairs and triples are limited—just two '8's, two '10's, two 'K's, and two '7's, but no triples. My straight potential is low since the sequence isn't long or strong enough. 
+
+Given that, bidding high might be risky because bombs are powerful, and I don't have any. Also, without jokers, my ability to counter a bomb from the farmers is limited. However, having two '2's is a plus since they're the highest individual cards after the jokers. 
+
+Considering the strategy tips, becoming the landlord is more risky if I don't have a strong hand. With only a moderate hand, bidding too high could lead to losing more points. But since I'm the first bidder, I could try a low bid to see if others pass, and maybe secure the landlord position with minimal points. 
+
+I think bidding 1 point is a safe start. It's low enough to avoid big losses if I lose, but still gives me a chance to take the landlord role if others pass. If someone else bids higher, I can reassess, but starting with 1 point seems reasonable. 
+
+So, my action will be to bid 1 point, hoping to either secure the landlord position cheaply or gauge the others' hands based on their bids.
+{ "action": 1, "reason": "The hand has two '2's and decent high cards (K, Q, J), but lacks bombs or jokers. A moderate bid of 1 point tests the field without overcommitting." } 
+
+2025-09-02 13:24:55:550950 - [DEBUG]: extracted json string is: { "action": 1, "reason": "The hand has two '2's and decent high cards (K, Q, J), but lacks bombs or jokers. A moderate bid of 1 point tests the field without overcommitting." }
+2025-09-02 13:24:55:551089 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': "The hand has two '2's and decent high cards (K, Q, J), but lacks bombs or jokers. A moderate bid of 1 point tests the field without overcommitting."}
+2025-09-02 13:24:55:551196 - [DEBUG]: Player 2 choose to bid with 1 point
+2025-09-02 13:24:55:551295 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 13:24:55:551408 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('4', 2, 1), ('5', 2, 2), ('6', 1, 3), ('2', 2, 12), ('5', 0, 2), ('A', 3, 11), ('3', 1, 0), ('10', 2, 7), ('4', 1, 1), ('J', 2, 8), ('K', 0, 10), ('6', 2, 3), ('7', 2, 4), ('J', 1, 8), ('9', 0, 6), ('A', 0, 11), ('J', 3, 8)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:24:56:970190 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10bbbca40>
+2025-09-02 13:24:56:970612 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 0,
+  "reason": "I have a relatively weak hand with no bombs or strong pairs. With the current highest bid at 1 point, it's safer to pass and let another player become the landlord. My cards are not strong enough to risk becoming the landlord, which requires winning against two farmers."
+}
+``` 
+
+2025-09-02 13:24:56:970708 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10bbbca40>
+2025-09-02 13:24:56:970776 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 0,
+  "reason": "I have a relatively weak hand with no bombs or strong pairs. With the current highest bid at 1 point, it's safer to pass and let another player become the landlord. My cards are not strong enough to risk becoming the landlord, which requires winning against two farmers."
+}
+``` 
+
+2025-09-02 13:24:56:970866 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "I have a relatively weak hand with no bombs or strong pairs. With the current highest bid at 1 point, it's safer to pass and let another player become the landlord. My cards are not strong enough to risk becoming the landlord, which requires winning against two farmers."
+}
+2025-09-02 13:24:56:970953 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': "I have a relatively weak hand with no bombs or strong pairs. With the current highest bid at 1 point, it's safer to pass and let another player become the landlord. My cards are not strong enough to risk becoming the landlord, which requires winning against two farmers."}
+2025-09-02 13:24:56:971011 - [DEBUG]: Player 3 choose to pass
+2025-09-02 13:24:56:971066 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 13:24:56:971151 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 0 points.
+Your cards are: [('Red Joker', -1, 14), ('5', 3, 2), ('9', 1, 6), ('K', 3, 10), ('Q', 2, 9), ('A', 1, 11), ('3', 3, 0), ('8', 2, 5), ('Black Joker', -1, 13), ('9', 3, 6), ('10', 0, 7), ('A', 2, 11), ('Q', 1, 9), ('2', 0, 12), ('7', 1, 4), ('6', 3, 3), ('4', 3, 1)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:24:58:283771 - [DEBUG]: current brain is: <function llama_3_3 at 0x10bbbccc0>
+2025-09-02 13:24:58:284452 - [DEBUG]: Player 1 bidding result: {"action": 3, "reason": "I am the current highest bidder with 0 points, but I have a strong hand with a Red Joker and a Black Joker, and a high chance of winning, so I decide to bid 3 points to become the landlord."} 
+
+2025-09-02 13:24:58:284967 - [DEBUG]: current brain is: <function llama_3_3 at 0x10bbbccc0>
+2025-09-02 13:24:58:285185 - [DEBUG]: Player 1 bidding result: {"action": 3, "reason": "I am the current highest bidder with 0 points, but I have a strong hand with a Red Joker and a Black Joker, and a high chance of winning, so I decide to bid 3 points to become the landlord."} 
+
+2025-09-02 13:24:58:285388 - [DEBUG]: extracted json string is: {"action": 3, "reason": "I am the current highest bidder with 0 points, but I have a strong hand with a Red Joker and a Black Joker, and a high chance of winning, so I decide to bid 3 points to become the landlord."}
+2025-09-02 13:24:58:285550 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I am the current highest bidder with 0 points, but I have a strong hand with a Red Joker and a Black Joker, and a high chance of winning, so I decide to bid 3 points to become the landlord.'}
+2025-09-02 13:24:58:285682 - [DEBUG]: Player 1 choose to bid with 3 points
+2025-09-02 13:24:58:285810 - [DEBUG]: Player 2 is making a bidding decision for the final round 
+2025-09-02 13:25:15:706211 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "My hand lacks strong combinations like bombs or jokers, making it risky to take the landlord role with a high bid. Passing allows me to play as a farmer with less risk."
+}
+2025-09-02 13:25:15:707201 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'My hand lacks strong combinations like bombs or jokers, making it risky to take the landlord role with a high bid. Passing allows me to play as a farmer with less risk.'}
+2025-09-02 13:25:15:707520 - [DEBUG]: Player 2 choose to pass
+2025-09-02 13:25:15:707749 - [DEBUG]: Final landlord is Player 1
+2025-09-02 13:25:15:707884 - [DEBUG]: Bidding END
+2025-09-02 13:26:46:094583 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 13:26:46:094731 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 13:26:46:095021 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 13:26:46:095068 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 13:26:46:095109 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 13:26:46:095146 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 13:26:46:095186 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 13:26:46:095259 - [DEBUG]: Player 1 hands: [('2', 3, 12), ('7', 3, 4), ('7', 1, 4), ('2', 0, 12), ('Q', 3, 9), ('9', 0, 6), ('5', 2, 2), ('J', 3, 8), ('3', 2, 0), ('Black Joker', -1, 13), ('8', 2, 5), ('Q', 2, 9), ('4', 0, 1), ('4', 2, 1), ('K', 2, 10), ('3', 3, 0), ('A', 0, 11)]
+2025-09-02 13:26:46:095301 - [DEBUG]: Player 2 hands: [('10', 3, 7), ('8', 3, 5), ('3', 1, 0), ('5', 3, 2), ('10', 2, 7), ('K', 3, 10), ('10', 0, 7), ('6', 1, 3), ('K', 1, 10), ('6', 2, 3), ('J', 2, 8), ('5', 1, 2), ('10', 1, 7), ('J', 0, 8), ('3', 0, 0), ('7', 2, 4), ('4', 1, 1)]
+2025-09-02 13:26:46:095344 - [DEBUG]: Player 3 hands: [('J', 1, 8), ('9', 2, 6), ('9', 3, 6), ('K', 0, 10), ('Q', 0, 9), ('7', 0, 4), ('2', 2, 12), ('6', 3, 3), ('2', 1, 12), ('5', 0, 2), ('Red Joker', -1, 14), ('6', 0, 3), ('9', 1, 6), ('A', 3, 11), ('Q', 1, 9), ('A', 2, 11), ('A', 1, 11)]
+2025-09-02 13:26:46:095378 - [DEBUG]: Landlord cards: [('4', 3, 1), ('8', 0, 5), ('8', 1, 5)]
+2025-09-02 13:26:46:095415 - [DEBUG]: Bidding started
+
+2025-09-02 13:26:46:095454 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 13:26:46:095500 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('10', 3, 7), ('8', 3, 5), ('3', 1, 0), ('5', 3, 2), ('10', 2, 7), ('K', 3, 10), ('10', 0, 7), ('6', 1, 3), ('K', 1, 10), ('6', 2, 3), ('J', 2, 8), ('5', 1, 2), ('10', 1, 7), ('J', 0, 8), ('3', 0, 0), ('7', 2, 4), ('4', 1, 1)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:27:07:701330 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10b7568e0>
+2025-09-02 13:27:07:701719 - [DEBUG]: Player 2 bidding result: Alright, let's see. I'm the first bidder in the landlord bidding phase. My cards are: [('10', 3, 7), ('8', 3, 5), ('3', 1, 0), ('5', 3, 2), ('10', 2, 7), ('K', 3, 10), ('10', 0, 7), ('6', 1, 3), ('K', 1, 10), ('6', 2, 3), ('J', 2, 8), ('5', 1, 2), ('10', 1, 7), ('J', 0, 8), ('3', 0, 0), ('7', 2, 4), ('4', 1, 1)]. 
+
+First, I need to evaluate the strength of my hand. Looking at the cards, I have two Kings, two Jacks, four 10s, and a pair of 5s and 6s. But I also have two 3s, which are the lowest cards, and some middling cards like 4, 7, 8. 
+
+The four 10s could form a bomb, which is strong. The two Kings and two Jacks are decent pairs. But I don't have any 2s or jokers, which are the highest-ranked cards. My hand has some strong points but also some weak low cards. 
+
+In the bidding phase, becoming the landlord means I can get the three extra bottom cards, which might improve my hand. But it's risky because I have to beat two players. My current hand isn't super strong, but the potential bomb with the 10s is a plus. 
+
+Considering the rules, if I bid 1 point, the next players might outbid me, and then I have a chance to counter. But if I pass now, the bidding might end with a lower bid, or we might have to reshuffle if everyone passes. 
+
+Since my hand is decent but not amazing, maybe a conservative approach is better. Bidding 1 point keeps me in the game without overcommitting. If others bid higher, I can decide later. 
+
+So, I'll bid 1 point. It's a balanced move given the hand's potential and risks.
+{ "action": 1, "reason": "The hand has a potential bomb with four 10s and decent high cards like Kings and Jacks, but lacks 2s or jokers. A conservative bid of 1 point allows for flexibility while staying in the game." } 
+
+2025-09-02 13:27:07:702115 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10b7568e0>
+2025-09-02 13:27:07:702259 - [DEBUG]: Player 2 bidding result: Alright, let's see. I'm the first bidder in the landlord bidding phase. My cards are: [('10', 3, 7), ('8', 3, 5), ('3', 1, 0), ('5', 3, 2), ('10', 2, 7), ('K', 3, 10), ('10', 0, 7), ('6', 1, 3), ('K', 1, 10), ('6', 2, 3), ('J', 2, 8), ('5', 1, 2), ('10', 1, 7), ('J', 0, 8), ('3', 0, 0), ('7', 2, 4), ('4', 1, 1)]. 
+
+First, I need to evaluate the strength of my hand. Looking at the cards, I have two Kings, two Jacks, four 10s, and a pair of 5s and 6s. But I also have two 3s, which are the lowest cards, and some middling cards like 4, 7, 8. 
+
+The four 10s could form a bomb, which is strong. The two Kings and two Jacks are decent pairs. But I don't have any 2s or jokers, which are the highest-ranked cards. My hand has some strong points but also some weak low cards. 
+
+In the bidding phase, becoming the landlord means I can get the three extra bottom cards, which might improve my hand. But it's risky because I have to beat two players. My current hand isn't super strong, but the potential bomb with the 10s is a plus. 
+
+Considering the rules, if I bid 1 point, the next players might outbid me, and then I have a chance to counter. But if I pass now, the bidding might end with a lower bid, or we might have to reshuffle if everyone passes. 
+
+Since my hand is decent but not amazing, maybe a conservative approach is better. Bidding 1 point keeps me in the game without overcommitting. If others bid higher, I can decide later. 
+
+So, I'll bid 1 point. It's a balanced move given the hand's potential and risks.
+{ "action": 1, "reason": "The hand has a potential bomb with four 10s and decent high cards like Kings and Jacks, but lacks 2s or jokers. A conservative bid of 1 point allows for flexibility while staying in the game." } 
+
+2025-09-02 13:27:07:702495 - [DEBUG]: extracted json string is: { "action": 1, "reason": "The hand has a potential bomb with four 10s and decent high cards like Kings and Jacks, but lacks 2s or jokers. A conservative bid of 1 point allows for flexibility while staying in the game." }
+2025-09-02 13:27:07:702571 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': 'The hand has a potential bomb with four 10s and decent high cards like Kings and Jacks, but lacks 2s or jokers. A conservative bid of 1 point allows for flexibility while staying in the game.'}
+2025-09-02 13:27:07:702630 - [DEBUG]: Player 2 choose to bid with 1 point
+2025-09-02 13:27:07:702709 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 13:27:07:702793 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('J', 1, 8), ('9', 2, 6), ('9', 3, 6), ('K', 0, 10), ('Q', 0, 9), ('7', 0, 4), ('2', 2, 12), ('6', 3, 3), ('2', 1, 12), ('5', 0, 2), ('Red Joker', -1, 14), ('6', 0, 3), ('9', 1, 6), ('A', 3, 11), ('Q', 1, 9), ('A', 2, 11), ('A', 1, 11)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:27:09:256024 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10b8949a0>
+2025-09-02 13:27:09:256755 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a pair of 2s, and three Aces. This strong combination makes me confident in bidding the maximum 3 points to become the Landlord and win the game."
+}
+``` 
+
+2025-09-02 13:27:09:257291 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10b8949a0>
+2025-09-02 13:27:09:257635 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a pair of 2s, and three Aces. This strong combination makes me confident in bidding the maximum 3 points to become the Landlord and win the game."
+}
+``` 
+
+2025-09-02 13:27:09:257908 - [DEBUG]: extracted json string is: {
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a pair of 2s, and three Aces. This strong combination makes me confident in bidding the maximum 3 points to become the Landlord and win the game."
+}
+2025-09-02 13:27:09:258152 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I have a strong hand with a Red Joker, a pair of 2s, and three Aces. This strong combination makes me confident in bidding the maximum 3 points to become the Landlord and win the game.'}
+2025-09-02 13:27:09:258452 - [DEBUG]: Player 3 choose to bid with 3 points
+2025-09-02 13:27:09:258816 - [DEBUG]: Player 2 is making a bidding decision for the final round 
+2025-09-02 13:27:21:377345 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "My hand lacks strong combinations (no bombs, only one triple and a few pairs). Bidding 6 points would be too risky with this weak hand. It's safer to pass and let the current highest bidder become the landlord."
+}
+2025-09-02 13:27:21:377581 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': "My hand lacks strong combinations (no bombs, only one triple and a few pairs). Bidding 6 points would be too risky with this weak hand. It's safer to pass and let the current highest bidder become the landlord."}
+2025-09-02 13:27:21:377877 - [DEBUG]: Player 2 choose to pass
+2025-09-02 13:27:21:377939 - [DEBUG]: Final landlord is Player 3
+2025-09-02 13:27:21:377986 - [DEBUG]: Bidding END
+2025-09-02 13:28:34:902458 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 13:28:34:902620 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 13:28:34:902927 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 13:28:34:902978 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 13:28:34:903025 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 13:28:34:903068 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 13:28:34:903109 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 13:28:34:903188 - [DEBUG]: Player 1 hands: [('10', 2, 7), ('3', 0, 0), ('Q', 0, 9), ('10', 1, 7), ('Q', 3, 9), ('A', 2, 11), ('K', 3, 10), ('7', 1, 4), ('4', 1, 1), ('4', 2, 1), ('4', 3, 1), ('2', 1, 12), ('A', 0, 11), ('7', 0, 4), ('K', 1, 10), ('2', 3, 12), ('J', 3, 8)]
+2025-09-02 13:28:34:903232 - [DEBUG]: Player 2 hands: [('9', 1, 6), ('4', 0, 1), ('A', 1, 11), ('K', 0, 10), ('9', 0, 6), ('3', 2, 0), ('9', 2, 6), ('Q', 1, 9), ('8', 3, 5), ('8', 2, 5), ('Q', 2, 9), ('6', 0, 3), ('6', 3, 3), ('Red Joker', -1, 14), ('3', 3, 0), ('8', 0, 5), ('5', 1, 2)]
+2025-09-02 13:28:34:903270 - [DEBUG]: Player 3 hands: [('2', 2, 12), ('5', 3, 2), ('5', 2, 2), ('10', 0, 7), ('5', 0, 2), ('9', 3, 6), ('2', 0, 12), ('J', 1, 8), ('7', 2, 4), ('A', 3, 11), ('K', 2, 10), ('6', 1, 3), ('7', 3, 4), ('J', 0, 8), ('3', 1, 0), ('8', 1, 5), ('10', 3, 7)]
+2025-09-02 13:28:34:903308 - [DEBUG]: Landlord cards: [('6', 2, 3), ('J', 2, 8), ('Black Joker', -1, 13)]
+2025-09-02 13:28:34:903363 - [DEBUG]: Bidding started
+
+2025-09-02 13:28:34:903402 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 13:28:34:903451 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('9', 1, 6), ('4', 0, 1), ('A', 1, 11), ('K', 0, 10), ('9', 0, 6), ('3', 2, 0), ('9', 2, 6), ('Q', 1, 9), ('8', 3, 5), ('8', 2, 5), ('Q', 2, 9), ('6', 0, 3), ('6', 3, 3), ('Red Joker', -1, 14), ('3', 3, 0), ('8', 0, 5), ('5', 1, 2)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:28:49:408423 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x109e468e0>
+2025-09-02 13:28:49:408762 - [DEBUG]: Player 2 bidding result: Alright, let's analyze the situation. I'm the first bidder in the landlord bidding phase with the following cards: [('9', 1, 6), ('4', 0, 1), ('A', 1, 11), ('K', 0, 10), ('9', 0, 6), ('3', 2, 0), ('9', 2, 6), ('Q', 1, 9), ('8', 3, 5), ('8', 2, 5), ('Q', 2, 9), ('6', 0, 3), ('6', 3, 3), ('Red Joker', -1, 14), ('3', 3, 0), ('8', 0, 5), ('5', 1, 2)]. 
+
+First, I notice that I have a Red Joker, which is the highest single card in the game. That's a strong card. I also have three 9s, which is a triple, and two pairs (8s and Qs). Additionally, there are two 3s and two 6s. 
+
+However, looking at the overall hand, it's a bit mixed. While the Red Joker is powerful, the rest of the hand lacks strong combinations like a bomb (four of a kind) or a strong sequence. The triple 9s are good, but the other cards are scattered without forming strong sequences or multiple triples. 
+
+Bidding 3 points as the landlord would mean taking a big risk because if I don't win, the penalty is higher. Since my hand isn't exceptionally strong, it might be safer to pass and let someone else take the landlord role. Plus, with only a few strong cards, it's better to play as a farmer where I can cooperate with another player rather than face two opponents alone.
+
+Therefore, the best decision here is to pass and avoid the risk of being the landlord with a mediocre hand.
+{ "action": 0, "reason": "The hand lacks strong combinations besides the Red Joker and triple 9s. Without a bomb or multiple powerful sequences, bidding high is risky. Better to pass and play as a farmer with this mediocre hand." } 
+
+2025-09-02 13:28:49:409194 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x109e468e0>
+2025-09-02 13:28:49:409304 - [DEBUG]: Player 2 bidding result: Alright, let's analyze the situation. I'm the first bidder in the landlord bidding phase with the following cards: [('9', 1, 6), ('4', 0, 1), ('A', 1, 11), ('K', 0, 10), ('9', 0, 6), ('3', 2, 0), ('9', 2, 6), ('Q', 1, 9), ('8', 3, 5), ('8', 2, 5), ('Q', 2, 9), ('6', 0, 3), ('6', 3, 3), ('Red Joker', -1, 14), ('3', 3, 0), ('8', 0, 5), ('5', 1, 2)]. 
+
+First, I notice that I have a Red Joker, which is the highest single card in the game. That's a strong card. I also have three 9s, which is a triple, and two pairs (8s and Qs). Additionally, there are two 3s and two 6s. 
+
+However, looking at the overall hand, it's a bit mixed. While the Red Joker is powerful, the rest of the hand lacks strong combinations like a bomb (four of a kind) or a strong sequence. The triple 9s are good, but the other cards are scattered without forming strong sequences or multiple triples. 
+
+Bidding 3 points as the landlord would mean taking a big risk because if I don't win, the penalty is higher. Since my hand isn't exceptionally strong, it might be safer to pass and let someone else take the landlord role. Plus, with only a few strong cards, it's better to play as a farmer where I can cooperate with another player rather than face two opponents alone.
+
+Therefore, the best decision here is to pass and avoid the risk of being the landlord with a mediocre hand.
+{ "action": 0, "reason": "The hand lacks strong combinations besides the Red Joker and triple 9s. Without a bomb or multiple powerful sequences, bidding high is risky. Better to pass and play as a farmer with this mediocre hand." } 
+
+2025-09-02 13:28:49:409458 - [DEBUG]: extracted json string is: { "action": 0, "reason": "The hand lacks strong combinations besides the Red Joker and triple 9s. Without a bomb or multiple powerful sequences, bidding high is risky. Better to pass and play as a farmer with this mediocre hand." }
+2025-09-02 13:28:49:409566 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'The hand lacks strong combinations besides the Red Joker and triple 9s. Without a bomb or multiple powerful sequences, bidding high is risky. Better to pass and play as a farmer with this mediocre hand.'}
+2025-09-02 13:28:49:409632 - [DEBUG]: Player 2 choose to pass
+2025-09-02 13:28:49:409699 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 13:28:49:409785 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 0 points.
+Your cards are: [('2', 2, 12), ('5', 3, 2), ('5', 2, 2), ('10', 0, 7), ('5', 0, 2), ('9', 3, 6), ('2', 0, 12), ('J', 1, 8), ('7', 2, 4), ('A', 3, 11), ('K', 2, 10), ('6', 1, 3), ('7', 3, 4), ('J', 0, 8), ('3', 1, 0), ('8', 1, 5), ('10', 3, 7)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:28:51:137366 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x109f809a0>
+2025-09-02 13:28:51:137689 - [DEBUG]: Player 3 bidding result: ```json
+{
+    "action": 1,
+    "reason": "My cards are decent, with a pair of 2s and a pair of 10s, and two Js, which gives me a reasonable chance to form strong combinations. Bidding 1 point allows me to enter the bidding without overcommitting, especially since the current bid is 0."
+}
+``` 
+
+2025-09-02 13:28:51:138093 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x109f809a0>
+2025-09-02 13:28:51:138225 - [DEBUG]: Player 3 bidding result: ```json
+{
+    "action": 1,
+    "reason": "My cards are decent, with a pair of 2s and a pair of 10s, and two Js, which gives me a reasonable chance to form strong combinations. Bidding 1 point allows me to enter the bidding without overcommitting, especially since the current bid is 0."
+}
+``` 
+
+2025-09-02 13:28:51:138379 - [DEBUG]: extracted json string is: {
+    "action": 1,
+    "reason": "My cards are decent, with a pair of 2s and a pair of 10s, and two Js, which gives me a reasonable chance to form strong combinations. Bidding 1 point allows me to enter the bidding without overcommitting, especially since the current bid is 0."
+}
+2025-09-02 13:28:51:138507 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': 'My cards are decent, with a pair of 2s and a pair of 10s, and two Js, which gives me a reasonable chance to form strong combinations. Bidding 1 point allows me to enter the bidding without overcommitting, especially since the current bid is 0.'}
+2025-09-02 13:28:51:138587 - [DEBUG]: Player 3 choose to bid with 1 point
+2025-09-02 13:28:51:138675 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 13:28:51:138753 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 1 points.
+Your cards are: [('10', 2, 7), ('3', 0, 0), ('Q', 0, 9), ('10', 1, 7), ('Q', 3, 9), ('A', 2, 11), ('K', 3, 10), ('7', 1, 4), ('4', 1, 1), ('4', 2, 1), ('4', 3, 1), ('2', 1, 12), ('A', 0, 11), ('7', 0, 4), ('K', 1, 10), ('2', 3, 12), ('J', 3, 8)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 13:28:52:272247 - [DEBUG]: current brain is: <function llama_3_3 at 0x109f80c20>
+2025-09-02 13:28:52:272948 - [DEBUG]: Player 1 bidding result: { "action": 3, "reason": "I choose to bid 3 points because my cards are quite strong, with two Queens, two 10s, and several high-ranking cards, which gives me a good chance of winning the game and getting more points as the landlord." } 
+
+2025-09-02 13:28:52:273491 - [DEBUG]: current brain is: <function llama_3_3 at 0x109f80c20>
+2025-09-02 13:28:52:273794 - [DEBUG]: Player 1 bidding result: { "action": 3, "reason": "I choose to bid 3 points because my cards are quite strong, with two Queens, two 10s, and several high-ranking cards, which gives me a good chance of winning the game and getting more points as the landlord." } 
+
+2025-09-02 13:28:52:274023 - [DEBUG]: extracted json string is: { "action": 3, "reason": "I choose to bid 3 points because my cards are quite strong, with two Queens, two 10s, and several high-ranking cards, which gives me a good chance of winning the game and getting more points as the landlord." }
+2025-09-02 13:28:52:274213 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I choose to bid 3 points because my cards are quite strong, with two Queens, two 10s, and several high-ranking cards, which gives me a good chance of winning the game and getting more points as the landlord.'}
+2025-09-02 13:28:52:274375 - [DEBUG]: Player 1 choose to bid with 3 points
+2025-09-02 13:28:52:274540 - [DEBUG]: Player 2 is making a bidding decision for the final round 
+2025-09-02 13:29:09:988033 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "Although holding the Red Joker and potential triples (9s and 8s), the overall hand lacks strong combinations and bomb potential. Bidding 6 points would be too risky given the scattered low-value cards (3s, 4s, 5s). Passing is safer to avoid high penalty points if losing as landlord."
+}
+2025-09-02 13:29:09:988612 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'Although holding the Red Joker and potential triples (9s and 8s), the overall hand lacks strong combinations and bomb potential. Bidding 6 points would be too risky given the scattered low-value cards (3s, 4s, 5s). Passing is safer to avoid high penalty points if losing as landlord.'}
+2025-09-02 13:29:09:989053 - [DEBUG]: Player 2 choose to pass
+2025-09-02 13:29:09:989181 - [DEBUG]: Final landlord is Player 1
+2025-09-02 13:29:09:989288 - [DEBUG]: Bidding END
+2025-09-02 18:33:51:057741 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 18:33:51:058189 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 18:33:51:058227 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 18:33:51:058257 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 18:33:51:058284 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 18:33:51:058310 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 18:33:51:058336 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 18:33:51:058385 - [DEBUG]: Player 1 hands: [('Black Joker', -1, 13), ('A', 3, 11), ('5', 3, 2), ('7', 1, 4), ('2', 0, 12), ('Q', 1, 9), ('A', 1, 11), ('2', 3, 12), ('J', 1, 8), ('A', 0, 11), ('6', 0, 3), ('2', 2, 12), ('6', 1, 3), ('9', 0, 6), ('7', 2, 4), ('4', 3, 1), ('9', 3, 6)]
+2025-09-02 18:33:51:058414 - [DEBUG]: Player 2 hands: [('3', 0, 0), ('6', 3, 3), ('8', 0, 5), ('7', 3, 4), ('J', 3, 8), ('8', 1, 5), ('K', 0, 10), ('5', 2, 2), ('3', 1, 0), ('K', 2, 10), ('10', 1, 7), ('10', 0, 7), ('10', 2, 7), ('J', 2, 8), ('4', 1, 1), ('J', 0, 8), ('8', 2, 5)]
+2025-09-02 18:33:51:058442 - [DEBUG]: Player 3 hands: [('4', 0, 1), ('Red Joker', -1, 14), ('10', 3, 7), ('Q', 2, 9), ('9', 1, 6), ('Q', 3, 9), ('5', 0, 2), ('A', 2, 11), ('3', 3, 0), ('7', 0, 4), ('Q', 0, 9), ('2', 1, 12), ('K', 3, 10), ('K', 1, 10), ('9', 2, 6), ('5', 1, 2), ('3', 2, 0)]
+2025-09-02 18:33:51:058467 - [DEBUG]: Landlord cards: [('6', 2, 3), ('8', 3, 5), ('4', 2, 1)]
+2025-09-02 18:33:51:058494 - [DEBUG]: Bidding started
+
+2025-09-02 18:33:51:058520 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 18:33:51:058552 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('3', 0, 0), ('6', 3, 3), ('8', 0, 5), ('7', 3, 4), ('J', 3, 8), ('8', 1, 5), ('K', 0, 10), ('5', 2, 2), ('3', 1, 0), ('K', 2, 10), ('10', 1, 7), ('10', 0, 7), ('10', 2, 7), ('J', 2, 8), ('4', 1, 1), ('J', 0, 8), ('8', 2, 5)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 18:34:15:733567 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x109e26a20>
+2025-09-02 18:34:15:733797 - [DEBUG]: Player 2 bidding result: Alright, let's analyze my current hand to decide whether to bid for the landlord role. My cards are: [('3', 0, 0), ('6', 3, 3), ('8', 0, 5), ('7', 3, 4), ('J', 3, 8), ('8', 1, 5), ('K', 0, 10), ('5', 2, 2), ('3', 1, 0), ('K', 2, 10), ('10', 1, 7), ('10', 0, 7), ('10', 2, 7), ('J', 2, 8), ('4', 1, 1), ('J', 0, 8), ('8', 2, 5)].
+
+First, I'll look for any high-value cards or potential combinations. I have three Js, three 10s, two Ks, and three 8s, which could form triples. However, I don't have any bombs (four of a kind) or jokers, which are powerful in this game. My highest cards are the Ks and Js, but no 2s or jokers, which are the strongest.
+
+I also notice I have a few pairs and singles, but not many strong sequences like straights or double sequences. My hand seems a bit fragmented without a clear strong combination to dominate play. Without bombs or high-value cards, it might be risky to take the landlord role since I'd have to face two farmers alone.
+
+Additionally, bidding higher (like 3 points) would require a very strong hand, which I don't have. Bidding 1 or 2 points might not secure the landlord role if others outbid me, but even if I get it, my hand isn't strong enough to confidently win. 
+
+Considering all this, it's safer to pass and let the other players take the landlord role, especially since I don't want to risk losing more points with a weak hand. 
+
+The final decision is to pass.
+{ "action": 0, "reason": "The hand lacks high-value cards (no 2s or jokers) and has limited strong combinations (only triples and pairs without bombs), making it too weak to confidently bid for the landlord role." } 
+
+2025-09-02 18:34:15:733952 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x109e26a20>
+2025-09-02 18:34:15:734034 - [DEBUG]: Player 2 bidding result: Alright, let's analyze my current hand to decide whether to bid for the landlord role. My cards are: [('3', 0, 0), ('6', 3, 3), ('8', 0, 5), ('7', 3, 4), ('J', 3, 8), ('8', 1, 5), ('K', 0, 10), ('5', 2, 2), ('3', 1, 0), ('K', 2, 10), ('10', 1, 7), ('10', 0, 7), ('10', 2, 7), ('J', 2, 8), ('4', 1, 1), ('J', 0, 8), ('8', 2, 5)].
+
+First, I'll look for any high-value cards or potential combinations. I have three Js, three 10s, two Ks, and three 8s, which could form triples. However, I don't have any bombs (four of a kind) or jokers, which are powerful in this game. My highest cards are the Ks and Js, but no 2s or jokers, which are the strongest.
+
+I also notice I have a few pairs and singles, but not many strong sequences like straights or double sequences. My hand seems a bit fragmented without a clear strong combination to dominate play. Without bombs or high-value cards, it might be risky to take the landlord role since I'd have to face two farmers alone.
+
+Additionally, bidding higher (like 3 points) would require a very strong hand, which I don't have. Bidding 1 or 2 points might not secure the landlord role if others outbid me, but even if I get it, my hand isn't strong enough to confidently win. 
+
+Considering all this, it's safer to pass and let the other players take the landlord role, especially since I don't want to risk losing more points with a weak hand. 
+
+The final decision is to pass.
+{ "action": 0, "reason": "The hand lacks high-value cards (no 2s or jokers) and has limited strong combinations (only triples and pairs without bombs), making it too weak to confidently bid for the landlord role." } 
+
+2025-09-02 18:34:15:734129 - [DEBUG]: extracted json string is: { "action": 0, "reason": "The hand lacks high-value cards (no 2s or jokers) and has limited strong combinations (only triples and pairs without bombs), making it too weak to confidently bid for the landlord role." }
+2025-09-02 18:34:15:734192 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'The hand lacks high-value cards (no 2s or jokers) and has limited strong combinations (only triples and pairs without bombs), making it too weak to confidently bid for the landlord role.'}
+2025-09-02 18:34:15:734241 - [DEBUG]: Player 2 choose to pass
+2025-09-02 18:34:15:734298 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 18:34:15:734369 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 0 points.
+Your cards are: [('4', 0, 1), ('Red Joker', -1, 14), ('10', 3, 7), ('Q', 2, 9), ('9', 1, 6), ('Q', 3, 9), ('5', 0, 2), ('A', 2, 11), ('3', 3, 0), ('7', 0, 4), ('Q', 0, 9), ('2', 1, 12), ('K', 3, 10), ('K', 1, 10), ('9', 2, 6), ('5', 1, 2), ('3', 2, 0)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 18:34:16:800942 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x109f64ae0>
+2025-09-02 18:34:16:801147 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a pair of 2s, a triple Q, and several other pairs. This gives me a good chance of winning as the landlord, so bidding 3 points is a reasonable risk."
+}
+``` 
+
+2025-09-02 18:34:16:801409 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x109f64ae0>
+2025-09-02 18:34:16:801451 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a pair of 2s, a triple Q, and several other pairs. This gives me a good chance of winning as the landlord, so bidding 3 points is a reasonable risk."
+}
+``` 
+
+2025-09-02 18:34:16:801498 - [DEBUG]: extracted json string is: {
+  "action": 3,
+  "reason": "I have a strong hand with a Red Joker, a pair of 2s, a triple Q, and several other pairs. This gives me a good chance of winning as the landlord, so bidding 3 points is a reasonable risk."
+}
+2025-09-02 18:34:16:801539 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I have a strong hand with a Red Joker, a pair of 2s, a triple Q, and several other pairs. This gives me a good chance of winning as the landlord, so bidding 3 points is a reasonable risk.'}
+2025-09-02 18:34:16:801571 - [DEBUG]: Player 3 choose to bid with 3 points
+2025-09-02 18:34:16:801611 - [DEBUG]: Player 2 is making a bidding decision for the final round 
+2025-09-02 18:34:30:219372 - [DEBUG]: extracted json string is: { "action": 0, "reason": "The hand lacks high-value cards (no 2s or jokers) and bombs, making it risky to bid 6 points. The existing triples and pairs are decent but not strong enough to justify the high bid against potential farmer cooperation." }
+2025-09-02 18:34:30:219840 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'The hand lacks high-value cards (no 2s or jokers) and bombs, making it risky to bid 6 points. The existing triples and pairs are decent but not strong enough to justify the high bid against potential farmer cooperation.'}
+2025-09-02 18:34:30:220279 - [DEBUG]: Player 2 choose to pass
+2025-09-02 18:34:30:220385 - [DEBUG]: Final landlord is Player 3
+2025-09-02 18:34:30:220449 - [DEBUG]: Bidding END
+2025-09-02 18:38:33:473207 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 18:38:33:473350 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 18:38:33:473408 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 18:38:33:473454 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 18:38:33:473493 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 18:38:33:473527 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 18:38:33:473560 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 18:38:33:473623 - [DEBUG]: Player 1 hands: [('K', 2, 10), ('J', 2, 8), ('9', 3, 6), ('9', 2, 6), ('10', 0, 7), ('J', 3, 8), ('4', 1, 1), ('Q', 3, 9), ('7', 0, 4), ('6', 2, 3), ('3', 2, 0), ('3', 1, 0), ('6', 1, 3), ('Q', 2, 9), ('8', 0, 5), ('10', 2, 7), ('4', 3, 1)]
+2025-09-02 18:38:33:473660 - [DEBUG]: Player 2 hands: [('A', 3, 11), ('9', 0, 6), ('Black Joker', -1, 13), ('8', 1, 5), ('2', 3, 12), ('K', 3, 10), ('5', 2, 2), ('J', 1, 8), ('J', 0, 8), ('10', 1, 7), ('7', 3, 4), ('2', 0, 12), ('Q', 0, 9), ('4', 2, 1), ('5', 3, 2), ('3', 3, 0), ('7', 1, 4)]
+2025-09-02 18:38:33:473696 - [DEBUG]: Player 3 hands: [('K', 1, 10), ('7', 2, 4), ('A', 2, 11), ('K', 0, 10), ('Red Joker', -1, 14), ('A', 0, 11), ('9', 1, 6), ('5', 0, 2), ('8', 3, 5), ('6', 3, 3), ('2', 2, 12), ('3', 0, 0), ('2', 1, 12), ('8', 2, 5), ('10', 3, 7), ('Q', 1, 9), ('A', 1, 11)]
+2025-09-02 18:38:33:473727 - [DEBUG]: Landlord cards: [('5', 1, 2), ('4', 0, 1), ('6', 0, 3)]
+2025-09-02 18:38:33:473762 - [DEBUG]: Bidding started
+
+2025-09-02 18:38:33:473796 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 18:38:33:473844 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('K', 1, 10), ('7', 2, 4), ('A', 2, 11), ('K', 0, 10), ('Red Joker', -1, 14), ('A', 0, 11), ('9', 1, 6), ('5', 0, 2), ('8', 3, 5), ('6', 3, 3), ('2', 2, 12), ('3', 0, 0), ('2', 1, 12), ('8', 2, 5), ('10', 3, 7), ('Q', 1, 9), ('A', 1, 11)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 18:38:35:088831 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x1079589a0>
+2025-09-02 18:38:35:089331 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "As the first bidder, I have a strong hand with a Red Joker, three Aces, a pair of Kings, and a pair of Twos. This strong combination makes me confident about my chances of winning as the landlord. Bidding 3 points immediately secures the landlord role, preventing other players from outbidding me or forcing me to double the bid later."
+}
+``` 
+
+2025-09-02 18:38:35:089769 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x1079589a0>
+2025-09-02 18:38:35:089869 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "As the first bidder, I have a strong hand with a Red Joker, three Aces, a pair of Kings, and a pair of Twos. This strong combination makes me confident about my chances of winning as the landlord. Bidding 3 points immediately secures the landlord role, preventing other players from outbidding me or forcing me to double the bid later."
+}
+``` 
+
+2025-09-02 18:38:35:089991 - [DEBUG]: extracted json string is: {
+  "action": 3,
+  "reason": "As the first bidder, I have a strong hand with a Red Joker, three Aces, a pair of Kings, and a pair of Twos. This strong combination makes me confident about my chances of winning as the landlord. Bidding 3 points immediately secures the landlord role, preventing other players from outbidding me or forcing me to double the bid later."
+}
+2025-09-02 18:38:35:090096 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'As the first bidder, I have a strong hand with a Red Joker, three Aces, a pair of Kings, and a pair of Twos. This strong combination makes me confident about my chances of winning as the landlord. Bidding 3 points immediately secures the landlord role, preventing other players from outbidding me or forcing me to double the bid later.'}
+2025-09-02 18:38:35:090167 - [DEBUG]: Player 3 choose to bid with 3 points
+2025-09-02 18:38:35:090248 - [DEBUG]: Final landlord is Player 3
+2025-09-02 18:38:35:090329 - [DEBUG]: Bidding END
+2025-09-02 18:38:39:047359 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 18:38:39:047478 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 18:38:39:047533 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 18:38:39:047578 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 18:38:39:047614 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 18:38:39:047646 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 18:38:39:047681 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 18:38:39:047736 - [DEBUG]: Player 1 hands: [('Q', 3, 9), ('4', 2, 1), ('K', 3, 10), ('10', 1, 7), ('9', 3, 6), ('5', 3, 2), ('K', 1, 10), ('Q', 1, 9), ('3', 2, 0), ('8', 0, 5), ('2', 2, 12), ('Red Joker', -1, 14), ('J', 1, 8), ('7', 3, 4), ('2', 1, 12), ('7', 2, 4), ('9', 1, 6)]
+2025-09-02 18:38:39:047772 - [DEBUG]: Player 2 hands: [('A', 2, 11), ('10', 0, 7), ('2', 0, 12), ('7', 1, 4), ('6', 1, 3), ('A', 1, 11), ('A', 0, 11), ('8', 3, 5), ('Q', 0, 9), ('7', 0, 4), ('6', 0, 3), ('K', 2, 10), ('J', 0, 8), ('J', 3, 8), ('Q', 2, 9), ('8', 2, 5), ('10', 2, 7)]
+2025-09-02 18:38:39:047809 - [DEBUG]: Player 3 hands: [('Black Joker', -1, 13), ('2', 3, 12), ('3', 1, 0), ('3', 3, 0), ('9', 0, 6), ('3', 0, 0), ('5', 2, 2), ('5', 1, 2), ('9', 2, 6), ('6', 3, 3), ('4', 1, 1), ('10', 3, 7), ('8', 1, 5), ('A', 3, 11), ('4', 0, 1), ('J', 2, 8), ('6', 2, 3)]
+2025-09-02 18:38:39:047844 - [DEBUG]: Landlord cards: [('K', 0, 10), ('5', 0, 2), ('4', 3, 1)]
+2025-09-02 18:38:39:047875 - [DEBUG]: Bidding started
+
+2025-09-02 18:38:39:047907 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 18:38:39:047952 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('A', 2, 11), ('10', 0, 7), ('2', 0, 12), ('7', 1, 4), ('6', 1, 3), ('A', 1, 11), ('A', 0, 11), ('8', 3, 5), ('Q', 0, 9), ('7', 0, 4), ('6', 0, 3), ('K', 2, 10), ('J', 0, 8), ('J', 3, 8), ('Q', 2, 9), ('8', 2, 5), ('10', 2, 7)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 18:39:01:696953 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10988a8e0>
+2025-09-02 18:39:01:697221 - [DEBUG]: Player 2 bidding result: Okay, let's see. I'm the first bidder, and I have to decide whether to pass or bid. My hand is [('A', 2, 11), ('10', 0, 7), ('2', 0, 12), ('7', 1, 4), ('6', 1, 3), ('A', 1, 11), ('A', 0, 11), ('8', 3, 5), ('Q', 0, 9), ('7', 0, 4), ('6', 0, 3), ('K', 2, 10), ('J', 0, 8), ('J', 3, 8), ('Q', 2, 9), ('8', 2, 5), ('10', 2, 7)]. 
+
+First, I'll assess the strength of my hand. I have three Aces, which is a triple. That's pretty strong. I also have two Queens, two 10s, two Js, two 8s, two 7s, two 6s, and a single 2 and King. The 2 is high, but it's alone. No jokers or bombs, which is a downside. 
+
+I can form a triple with the Aces, and I have several pairs. There's potential for straights or double sequences, but looking at the numbers, I don't see a clear straight or double sequence that's strong enough. The lack of bombs or high-value cards like jokers or more 2s makes me a bit hesitant. 
+
+Bidding 3 points is risky because if I don't have a very strong hand, I might lose big. Since I'm the first bidder, I can start with a lower bid to see if others challenge me. If I bid 1 point, I can still get the landlord role if others pass, and it's less risky. 
+
+The downside is that if someone else bids higher, I might lose the chance, but starting with 1 point feels safer. My hand has some potential with the triple and pairs, but it's not super strong. So, bidding 1 point seems like a balanced decision—testing the waters without overcommitting. 
+
+If I pass, I might miss out on being the landlord, which could be a missed opportunity if my hand is better than I think. But I think 1 point is a good middle ground.
+{ "action": 1, "reason": "Hand has strong triples (Aces) and multiple pairs, but lacks bombs or jokers. Bidding 1 point to test the waters without overcommitting, considering the potential but moderate strength of the cards." } 
+
+2025-09-02 18:39:01:697395 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10988a8e0>
+2025-09-02 18:39:01:697481 - [DEBUG]: Player 2 bidding result: Okay, let's see. I'm the first bidder, and I have to decide whether to pass or bid. My hand is [('A', 2, 11), ('10', 0, 7), ('2', 0, 12), ('7', 1, 4), ('6', 1, 3), ('A', 1, 11), ('A', 0, 11), ('8', 3, 5), ('Q', 0, 9), ('7', 0, 4), ('6', 0, 3), ('K', 2, 10), ('J', 0, 8), ('J', 3, 8), ('Q', 2, 9), ('8', 2, 5), ('10', 2, 7)]. 
+
+First, I'll assess the strength of my hand. I have three Aces, which is a triple. That's pretty strong. I also have two Queens, two 10s, two Js, two 8s, two 7s, two 6s, and a single 2 and King. The 2 is high, but it's alone. No jokers or bombs, which is a downside. 
+
+I can form a triple with the Aces, and I have several pairs. There's potential for straights or double sequences, but looking at the numbers, I don't see a clear straight or double sequence that's strong enough. The lack of bombs or high-value cards like jokers or more 2s makes me a bit hesitant. 
+
+Bidding 3 points is risky because if I don't have a very strong hand, I might lose big. Since I'm the first bidder, I can start with a lower bid to see if others challenge me. If I bid 1 point, I can still get the landlord role if others pass, and it's less risky. 
+
+The downside is that if someone else bids higher, I might lose the chance, but starting with 1 point feels safer. My hand has some potential with the triple and pairs, but it's not super strong. So, bidding 1 point seems like a balanced decision—testing the waters without overcommitting. 
+
+If I pass, I might miss out on being the landlord, which could be a missed opportunity if my hand is better than I think. But I think 1 point is a good middle ground.
+{ "action": 1, "reason": "Hand has strong triples (Aces) and multiple pairs, but lacks bombs or jokers. Bidding 1 point to test the waters without overcommitting, considering the potential but moderate strength of the cards." } 
+
+2025-09-02 18:39:01:697722 - [DEBUG]: extracted json string is: { "action": 1, "reason": "Hand has strong triples (Aces) and multiple pairs, but lacks bombs or jokers. Bidding 1 point to test the waters without overcommitting, considering the potential but moderate strength of the cards." }
+2025-09-02 18:39:01:697861 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': 'Hand has strong triples (Aces) and multiple pairs, but lacks bombs or jokers. Bidding 1 point to test the waters without overcommitting, considering the potential but moderate strength of the cards.'}
+2025-09-02 18:39:01:697954 - [DEBUG]: Player 2 choose to bid with 1 point
+2025-09-02 18:39:01:698047 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 18:39:01:698161 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('Black Joker', -1, 13), ('2', 3, 12), ('3', 1, 0), ('3', 3, 0), ('9', 0, 6), ('3', 0, 0), ('5', 2, 2), ('5', 1, 2), ('9', 2, 6), ('6', 3, 3), ('4', 1, 1), ('10', 3, 7), ('8', 1, 5), ('A', 3, 11), ('4', 0, 1), ('J', 2, 8), ('6', 2, 3)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 18:39:03:204171 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x1099a49a0>
+2025-09-02 18:39:03:204815 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 0,
+  "reason": "I have one Black Joker and one 2, which are strong cards. However, the rest of my cards are quite fragmented with many single cards and only a few pairs. I don't see any immediate bombs or strong straights forming, which makes it risky to bid higher and become the landlord, especially against the potential for two farmers to cooperate. Therefore, I choose to pass at this point."
+}
+``` 
+
+2025-09-02 18:39:03:205088 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x1099a49a0>
+2025-09-02 18:39:03:205240 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 0,
+  "reason": "I have one Black Joker and one 2, which are strong cards. However, the rest of my cards are quite fragmented with many single cards and only a few pairs. I don't see any immediate bombs or strong straights forming, which makes it risky to bid higher and become the landlord, especially against the potential for two farmers to cooperate. Therefore, I choose to pass at this point."
+}
+``` 
+
+2025-09-02 18:39:03:205766 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "I have one Black Joker and one 2, which are strong cards. However, the rest of my cards are quite fragmented with many single cards and only a few pairs. I don't see any immediate bombs or strong straights forming, which makes it risky to bid higher and become the landlord, especially against the potential for two farmers to cooperate. Therefore, I choose to pass at this point."
+}
+2025-09-02 18:39:03:205954 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': "I have one Black Joker and one 2, which are strong cards. However, the rest of my cards are quite fragmented with many single cards and only a few pairs. I don't see any immediate bombs or strong straights forming, which makes it risky to bid higher and become the landlord, especially against the potential for two farmers to cooperate. Therefore, I choose to pass at this point."}
+2025-09-02 18:39:03:206056 - [DEBUG]: Player 3 choose to pass
+2025-09-02 18:39:03:206142 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 18:39:03:206250 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 0 points.
+Your cards are: [('Q', 3, 9), ('4', 2, 1), ('K', 3, 10), ('10', 1, 7), ('9', 3, 6), ('5', 3, 2), ('K', 1, 10), ('Q', 1, 9), ('3', 2, 0), ('8', 0, 5), ('2', 2, 12), ('Red Joker', -1, 14), ('J', 1, 8), ('7', 3, 4), ('2', 1, 12), ('7', 2, 4), ('9', 1, 6)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 18:39:04:911421 - [DEBUG]: current brain is: <function llama_3_3 at 0x1099a4c20>
+2025-09-02 18:39:04:912121 - [DEBUG]: Player 1 bidding result: {"action": 3, "reason": "I have the highest possible bid, and with the cards I have, including a Red Joker, I think I have a good chance of winning the game, so I decide to bid 3 points to become the landlord."} 
+
+2025-09-02 18:39:04:912447 - [DEBUG]: current brain is: <function llama_3_3 at 0x1099a4c20>
+2025-09-02 18:39:04:912635 - [DEBUG]: Player 1 bidding result: {"action": 3, "reason": "I have the highest possible bid, and with the cards I have, including a Red Joker, I think I have a good chance of winning the game, so I decide to bid 3 points to become the landlord."} 
+
+2025-09-02 18:39:04:912910 - [DEBUG]: extracted json string is: {"action": 3, "reason": "I have the highest possible bid, and with the cards I have, including a Red Joker, I think I have a good chance of winning the game, so I decide to bid 3 points to become the landlord."}
+2025-09-02 18:39:04:913289 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I have the highest possible bid, and with the cards I have, including a Red Joker, I think I have a good chance of winning the game, so I decide to bid 3 points to become the landlord.'}
+2025-09-02 18:39:04:913421 - [DEBUG]: Player 1 choose to bid with 3 points
+2025-09-02 18:39:04:913512 - [DEBUG]: Player 2 is making a bidding decision for the final round 
+2025-09-02 18:39:13:816525 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "The hand lacks strong bombs or jokers necessary for confidently winning as landlord. While it has some decent combinations (triple Aces, pairs), doubling to 6 points carries high risk without clear dominance. Passing allows safer farmer role with cooperative advantage."
+}
+2025-09-02 18:39:13:817031 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'The hand lacks strong bombs or jokers necessary for confidently winning as landlord. While it has some decent combinations (triple Aces, pairs), doubling to 6 points carries high risk without clear dominance. Passing allows safer farmer role with cooperative advantage.'}
+2025-09-02 18:39:13:817225 - [DEBUG]: Player 2 choose to pass
+2025-09-02 18:39:13:817388 - [DEBUG]: Final landlord is Player 1
+2025-09-02 18:39:13:817504 - [DEBUG]: Bidding END
+2025-09-02 18:41:29:421957 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 18:41:29:422112 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 18:41:29:422385 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 18:41:29:422425 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 18:41:29:422461 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 18:41:29:422493 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 18:41:29:422522 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 18:41:29:422573 - [DEBUG]: Player 1 hands: [('4', 3, 1), ('5', 3, 2), ('Black Joker', -1, 13), ('4', 2, 1), ('9', 2, 6), ('10', 2, 7), ('4', 1, 1), ('7', 2, 4), ('9', 3, 6), ('5', 2, 2), ('5', 0, 2), ('K', 2, 10), ('4', 0, 1), ('2', 1, 12), ('10', 1, 7), ('Q', 1, 9), ('A', 3, 11)]
+2025-09-02 18:41:29:422614 - [DEBUG]: Player 2 hands: [('7', 1, 4), ('3', 0, 0), ('2', 0, 12), ('K', 1, 10), ('8', 1, 5), ('6', 1, 3), ('Red Joker', -1, 14), ('Q', 2, 9), ('7', 0, 4), ('K', 0, 10), ('3', 1, 0), ('J', 2, 8), ('9', 1, 6), ('A', 1, 11), ('3', 3, 0), ('9', 0, 6), ('3', 2, 0)]
+2025-09-02 18:41:29:422645 - [DEBUG]: Player 3 hands: [('8', 0, 5), ('J', 1, 8), ('10', 0, 7), ('8', 2, 5), ('7', 3, 4), ('6', 0, 3), ('Q', 0, 9), ('10', 3, 7), ('2', 3, 12), ('2', 2, 12), ('J', 3, 8), ('J', 0, 8), ('Q', 3, 9), ('A', 0, 11), ('5', 1, 2), ('8', 3, 5), ('K', 3, 10)]
+2025-09-02 18:41:29:422671 - [DEBUG]: Landlord cards: [('6', 2, 3), ('A', 2, 11), ('6', 3, 3)]
+2025-09-02 18:41:29:422697 - [DEBUG]: Bidding started
+
+2025-09-02 18:41:29:422725 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 18:41:29:422763 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('7', 1, 4), ('3', 0, 0), ('2', 0, 12), ('K', 1, 10), ('8', 1, 5), ('6', 1, 3), ('Red Joker', -1, 14), ('Q', 2, 9), ('7', 0, 4), ('K', 0, 10), ('3', 1, 0), ('J', 2, 8), ('9', 1, 6), ('A', 1, 11), ('3', 3, 0), ('9', 0, 6), ('3', 2, 0)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 18:41:41:463981 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x1082ee8e0>
+2025-09-02 18:41:41:464410 - [DEBUG]: Player 2 bidding result: Okay, let me analyze my cards and decide whether to bid or pass. I'm the first bidder, so my decision sets the tone.
+
+First, looking at my cards: I have a Red Joker, which is a huge advantage because it's the highest card and can form a Joker Bomb if I get the Black Joker in the bottom cards. That's a guaranteed win if I play it right. I also have a '2', which is a high single card. Additionally, I have two 'K's, which can form a strong pair, and an 'A'. 
+
+However, I also have four '3's, which could be useful for a bomb if combined with a triple or something else. There are some middle cards like '6', '7', '8', '9', but not a lot of strong sequences or pairs. The 'Q' and 'J' are okay but not too powerful.
+
+Since I have the Red Joker, there's a chance to get a Joker Bomb if the bottom cards include the Black Joker. Even without it, the Red Joker is a strong card. The potential for a bomb with the '3's is also there. 
+
+Bidding 3 points is risky, but with the Red Joker and the possibility of strengthening my hand with the bottom cards, it might be worth it. The potential reward is high, and the risk is manageable given the strong cards I already have.
+
+I think I'll go all in and bid 3 points to maximize my chances of becoming the landlord and securing a good position.
+{ "action": 3, "reason": "With the Red Joker and potential for a Joker Bomb if the bottom cards include the Black Joker, along with strong singles like 2 and Ks, it's worth taking the risk to bid the maximum 3 points for the landlord role to maximize potential rewards." } 
+
+2025-09-02 18:41:41:464915 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x1082ee8e0>
+2025-09-02 18:41:41:465040 - [DEBUG]: Player 2 bidding result: Okay, let me analyze my cards and decide whether to bid or pass. I'm the first bidder, so my decision sets the tone.
+
+First, looking at my cards: I have a Red Joker, which is a huge advantage because it's the highest card and can form a Joker Bomb if I get the Black Joker in the bottom cards. That's a guaranteed win if I play it right. I also have a '2', which is a high single card. Additionally, I have two 'K's, which can form a strong pair, and an 'A'. 
+
+However, I also have four '3's, which could be useful for a bomb if combined with a triple or something else. There are some middle cards like '6', '7', '8', '9', but not a lot of strong sequences or pairs. The 'Q' and 'J' are okay but not too powerful.
+
+Since I have the Red Joker, there's a chance to get a Joker Bomb if the bottom cards include the Black Joker. Even without it, the Red Joker is a strong card. The potential for a bomb with the '3's is also there. 
+
+Bidding 3 points is risky, but with the Red Joker and the possibility of strengthening my hand with the bottom cards, it might be worth it. The potential reward is high, and the risk is manageable given the strong cards I already have.
+
+I think I'll go all in and bid 3 points to maximize my chances of becoming the landlord and securing a good position.
+{ "action": 3, "reason": "With the Red Joker and potential for a Joker Bomb if the bottom cards include the Black Joker, along with strong singles like 2 and Ks, it's worth taking the risk to bid the maximum 3 points for the landlord role to maximize potential rewards." } 
+
+2025-09-02 18:41:41:465422 - [DEBUG]: extracted json string is: { "action": 3, "reason": "With the Red Joker and potential for a Joker Bomb if the bottom cards include the Black Joker, along with strong singles like 2 and Ks, it's worth taking the risk to bid the maximum 3 points for the landlord role to maximize potential rewards." }
+2025-09-02 18:41:41:465580 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': "With the Red Joker and potential for a Joker Bomb if the bottom cards include the Black Joker, along with strong singles like 2 and Ks, it's worth taking the risk to bid the maximum 3 points for the landlord role to maximize potential rewards."}
+2025-09-02 18:41:41:465689 - [DEBUG]: Player 2 choose to bid with 3 points
+2025-09-02 18:41:41:465797 - [DEBUG]: Final landlord is Player 2
+2025-09-02 18:41:41:465878 - [DEBUG]: Bidding END
+2025-09-02 22:00:42:592990 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 22:00:42:593580 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 22:00:42:593643 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 22:00:42:593683 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 22:00:42:593717 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 22:00:42:593749 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 22:00:42:593784 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 22:00:42:593846 - [DEBUG]: Player 1 hands: [('A', 2, 11), ('J', 3, 8), ('J', 2, 8), ('4', 0, 1), ('4', 2, 1), ('9', 3, 6), ('9', 2, 6), ('3', 3, 0), ('Q', 0, 9), ('A', 3, 11), ('Q', 1, 9), ('9', 0, 6), ('10', 2, 7), ('6', 3, 3), ('J', 1, 8), ('9', 1, 6), ('2', 1, 12)]
+2025-09-02 22:00:42:593881 - [DEBUG]: Player 2 hands: [('8', 3, 5), ('A', 0, 11), ('5', 3, 2), ('4', 1, 1), ('6', 1, 3), ('3', 0, 0), ('6', 0, 3), ('K', 3, 10), ('2', 0, 12), ('2', 3, 12), ('A', 1, 11), ('6', 2, 3), ('3', 1, 0), ('10', 3, 7), ('J', 0, 8), ('7', 3, 4), ('Q', 3, 9)]
+2025-09-02 22:00:42:593913 - [DEBUG]: Player 3 hands: [('2', 2, 12), ('5', 0, 2), ('Black Joker', -1, 13), ('7', 2, 4), ('K', 0, 10), ('10', 1, 7), ('10', 0, 7), ('7', 0, 4), ('5', 2, 2), ('8', 1, 5), ('8', 2, 5), ('3', 2, 0), ('8', 0, 5), ('4', 3, 1), ('K', 2, 10), ('K', 1, 10), ('5', 1, 2)]
+2025-09-02 22:00:42:593942 - [DEBUG]: Landlord cards: [('7', 1, 4), ('Q', 2, 9), ('Red Joker', -1, 14)]
+2025-09-02 22:00:42:593975 - [DEBUG]: Bidding started
+
+2025-09-02 22:00:42:594005 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 22:00:42:594052 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('A', 2, 11), ('J', 3, 8), ('J', 2, 8), ('4', 0, 1), ('4', 2, 1), ('9', 3, 6), ('9', 2, 6), ('3', 3, 0), ('Q', 0, 9), ('A', 3, 11), ('Q', 1, 9), ('9', 0, 6), ('10', 2, 7), ('6', 3, 3), ('J', 1, 8), ('9', 1, 6), ('2', 1, 12)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 22:00:44:654091 - [DEBUG]: current brain is: <function llama_3_3 at 0x109d30c20>
+2025-09-02 22:00:44:654346 - [DEBUG]: Player 1 bidding result: { "action": 3, "reason": "I have a strong hand with multiple high-card combinations, including pairs and potential straights, which gives me a high chance of winning as the landlord, so I choose to bid 3 points to get the landlord role." } 
+
+2025-09-02 22:00:44:654631 - [DEBUG]: current brain is: <function llama_3_3 at 0x109d30c20>
+2025-09-02 22:00:44:654716 - [DEBUG]: Player 1 bidding result: { "action": 3, "reason": "I have a strong hand with multiple high-card combinations, including pairs and potential straights, which gives me a high chance of winning as the landlord, so I choose to bid 3 points to get the landlord role." } 
+
+2025-09-02 22:00:44:654818 - [DEBUG]: extracted json string is: { "action": 3, "reason": "I have a strong hand with multiple high-card combinations, including pairs and potential straights, which gives me a high chance of winning as the landlord, so I choose to bid 3 points to get the landlord role." }
+2025-09-02 22:00:44:654911 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I have a strong hand with multiple high-card combinations, including pairs and potential straights, which gives me a high chance of winning as the landlord, so I choose to bid 3 points to get the landlord role.'}
+2025-09-02 22:00:44:654983 - [DEBUG]: Player 1 choose to bid with 3 points
+2025-09-02 22:00:44:655056 - [DEBUG]: Final landlord is Player 1
+2025-09-02 22:00:44:655116 - [DEBUG]: Bidding END
+2025-09-02 22:01:34:448842 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 22:01:34:448994 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 22:01:34:449294 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 22:01:34:449357 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 22:01:34:449432 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 22:01:34:449477 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 22:01:34:449519 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 22:01:34:449594 - [DEBUG]: Player 1 hands: [('8', 2, 5), ('5', 1, 2), ('8', 0, 5), ('7', 3, 4), ('A', 2, 11), ('2', 3, 12), ('7', 2, 4), ('Black Joker', -1, 13), ('9', 2, 6), ('10', 3, 7), ('2', 2, 12), ('9', 0, 6), ('J', 2, 8), ('10', 1, 7), ('K', 0, 10), ('10', 0, 7), ('K', 3, 10)]
+2025-09-02 22:01:34:449639 - [DEBUG]: Player 2 hands: [('5', 2, 2), ('3', 3, 0), ('J', 3, 8), ('K', 1, 10), ('A', 3, 11), ('10', 2, 7), ('3', 0, 0), ('Q', 3, 9), ('Red Joker', -1, 14), ('A', 1, 11), ('5', 0, 2), ('8', 3, 5), ('Q', 0, 9), ('8', 1, 5), ('4', 1, 1), ('Q', 1, 9), ('A', 0, 11)]
+2025-09-02 22:01:34:449677 - [DEBUG]: Player 3 hands: [('9', 1, 6), ('K', 2, 10), ('4', 3, 1), ('3', 2, 0), ('6', 3, 3), ('7', 1, 4), ('7', 0, 4), ('J', 1, 8), ('9', 3, 6), ('J', 0, 8), ('4', 2, 1), ('3', 1, 0), ('2', 1, 12), ('2', 0, 12), ('5', 3, 2), ('6', 1, 3), ('6', 2, 3)]
+2025-09-02 22:01:34:449715 - [DEBUG]: Landlord cards: [('4', 0, 1), ('6', 0, 3), ('Q', 2, 9)]
+2025-09-02 22:01:34:449782 - [DEBUG]: Bidding started
+
+2025-09-02 22:01:34:449853 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 22:01:34:449921 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('9', 1, 6), ('K', 2, 10), ('4', 3, 1), ('3', 2, 0), ('6', 3, 3), ('7', 1, 4), ('7', 0, 4), ('J', 1, 8), ('9', 3, 6), ('J', 0, 8), ('4', 2, 1), ('3', 1, 0), ('2', 1, 12), ('2', 0, 12), ('5', 3, 2), ('6', 1, 3), ('6', 2, 3)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 22:01:36:002306 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x107a949a0>
+2025-09-02 22:01:36:002755 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 1,
+  "reason": "As the first bidder, I have a strong pair of 2s and a triple of 6s, along with two pairs of Js and 9s. While not an overwhelmingly strong hand, it's decent enough to bid 1 point and see how the other players react. The two 2s give me good control, and the scattered pairs and triples offer some flexibility. Bidding 1 point keeps me in the game without overcommitting."
+}
+``` 
+
+2025-09-02 22:01:36:003252 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x107a949a0>
+2025-09-02 22:01:36:003364 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 1,
+  "reason": "As the first bidder, I have a strong pair of 2s and a triple of 6s, along with two pairs of Js and 9s. While not an overwhelmingly strong hand, it's decent enough to bid 1 point and see how the other players react. The two 2s give me good control, and the scattered pairs and triples offer some flexibility. Bidding 1 point keeps me in the game without overcommitting."
+}
+``` 
+
+2025-09-02 22:01:36:003477 - [DEBUG]: extracted json string is: {
+  "action": 1,
+  "reason": "As the first bidder, I have a strong pair of 2s and a triple of 6s, along with two pairs of Js and 9s. While not an overwhelmingly strong hand, it's decent enough to bid 1 point and see how the other players react. The two 2s give me good control, and the scattered pairs and triples offer some flexibility. Bidding 1 point keeps me in the game without overcommitting."
+}
+2025-09-02 22:01:36:003562 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': "As the first bidder, I have a strong pair of 2s and a triple of 6s, along with two pairs of Js and 9s. While not an overwhelmingly strong hand, it's decent enough to bid 1 point and see how the other players react. The two 2s give me good control, and the scattered pairs and triples offer some flexibility. Bidding 1 point keeps me in the game without overcommitting."}
+2025-09-02 22:01:36:003621 - [DEBUG]: Player 3 choose to bid with 1 point
+2025-09-02 22:01:36:003706 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 22:01:36:003854 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('8', 2, 5), ('5', 1, 2), ('8', 0, 5), ('7', 3, 4), ('A', 2, 11), ('2', 3, 12), ('7', 2, 4), ('Black Joker', -1, 13), ('9', 2, 6), ('10', 3, 7), ('2', 2, 12), ('9', 0, 6), ('J', 2, 8), ('10', 1, 7), ('K', 0, 10), ('10', 0, 7), ('K', 3, 10)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 22:01:37:554754 - [DEBUG]: current brain is: <function llama_3_3 at 0x107a94c20>
+2025-09-02 22:01:37:555403 - [DEBUG]: Player 1 bidding result: {"action": 2, "reason": "I choose to bid 2 points because my cards have a good mix of high and low ranks, including a Joker, which gives me a strong chance of winning, and I want to increase my chances of becoming the landlord to potentially gain more points if I win the game."} 
+
+2025-09-02 22:01:37:555909 - [DEBUG]: current brain is: <function llama_3_3 at 0x107a94c20>
+2025-09-02 22:01:37:556207 - [DEBUG]: Player 1 bidding result: {"action": 2, "reason": "I choose to bid 2 points because my cards have a good mix of high and low ranks, including a Joker, which gives me a strong chance of winning, and I want to increase my chances of becoming the landlord to potentially gain more points if I win the game."} 
+
+2025-09-02 22:01:37:556460 - [DEBUG]: extracted json string is: {"action": 2, "reason": "I choose to bid 2 points because my cards have a good mix of high and low ranks, including a Joker, which gives me a strong chance of winning, and I want to increase my chances of becoming the landlord to potentially gain more points if I win the game."}
+2025-09-02 22:01:37:556666 - [DEBUG]: After parsing the bidding result: {'action': 2, 'reason': 'I choose to bid 2 points because my cards have a good mix of high and low ranks, including a Joker, which gives me a strong chance of winning, and I want to increase my chances of becoming the landlord to potentially gain more points if I win the game.'}
+2025-09-02 22:01:37:556814 - [DEBUG]: Player 1 choose to bid with 2 points
+2025-09-02 22:01:37:556958 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 22:01:37:557138 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 2 points.
+Your cards are: [('5', 2, 2), ('3', 3, 0), ('J', 3, 8), ('K', 1, 10), ('A', 3, 11), ('10', 2, 7), ('3', 0, 0), ('Q', 3, 9), ('Red Joker', -1, 14), ('A', 1, 11), ('5', 0, 2), ('8', 3, 5), ('Q', 0, 9), ('8', 1, 5), ('4', 1, 1), ('Q', 1, 9), ('A', 0, 11)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 22:01:56:805527 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x1079768e0>
+2025-09-02 22:01:56:806461 - [DEBUG]: Player 2 bidding result: Okay, let's see. I'm the third bidder, and the current highest bid is 2 points. My cards are... hmm. I have a Red Joker, which is strong, and three Aces, which is good. Also, three Queens and some middle cards like 8s and 5s. I don't have a lot of low cards except for two 3s and a 4. 
+
+The Red Joker is a big advantage because it's the highest card. The triple Aces are also strong. The Queens can form a triple, and there are some pairs. But I don't have a bomb (four of a kind), and my low cards might be a problem. 
+
+Bidding 3 points would make me the landlord, but is it worth it? The current bid is 2, so if I bid 3, I can take it. But if I pass, the first player might double the bid to 4, but since they passed initially, maybe they won't. 
+
+Considering my strong cards, like the Red Joker and triple Aces, it might be worth going for the landlord. Plus, the bottom three cards could improve my hand. However, my low cards are a risk. But overall, the high cards are promising. 
+
+I think I should bid 3 points to become the landlord. The potential reward is higher, and I have some strong combinations that can help me win.
+{ "action": 3, "reason": "My hand has strong cards like the Red Joker, triple Aces, and triple Queens, which provide a good foundation for winning. The potential to improve with the landlord's bottom cards makes bidding 3 points worthwhile despite some lower cards." } 
+
+2025-09-02 22:01:56:806925 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x1079768e0>
+2025-09-02 22:01:56:807149 - [DEBUG]: Player 2 bidding result: Okay, let's see. I'm the third bidder, and the current highest bid is 2 points. My cards are... hmm. I have a Red Joker, which is strong, and three Aces, which is good. Also, three Queens and some middle cards like 8s and 5s. I don't have a lot of low cards except for two 3s and a 4. 
+
+The Red Joker is a big advantage because it's the highest card. The triple Aces are also strong. The Queens can form a triple, and there are some pairs. But I don't have a bomb (four of a kind), and my low cards might be a problem. 
+
+Bidding 3 points would make me the landlord, but is it worth it? The current bid is 2, so if I bid 3, I can take it. But if I pass, the first player might double the bid to 4, but since they passed initially, maybe they won't. 
+
+Considering my strong cards, like the Red Joker and triple Aces, it might be worth going for the landlord. Plus, the bottom three cards could improve my hand. However, my low cards are a risk. But overall, the high cards are promising. 
+
+I think I should bid 3 points to become the landlord. The potential reward is higher, and I have some strong combinations that can help me win.
+{ "action": 3, "reason": "My hand has strong cards like the Red Joker, triple Aces, and triple Queens, which provide a good foundation for winning. The potential to improve with the landlord's bottom cards makes bidding 3 points worthwhile despite some lower cards." } 
+
+2025-09-02 22:01:56:807380 - [DEBUG]: extracted json string is: { "action": 3, "reason": "My hand has strong cards like the Red Joker, triple Aces, and triple Queens, which provide a good foundation for winning. The potential to improve with the landlord's bottom cards makes bidding 3 points worthwhile despite some lower cards." }
+2025-09-02 22:01:56:807540 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': "My hand has strong cards like the Red Joker, triple Aces, and triple Queens, which provide a good foundation for winning. The potential to improve with the landlord's bottom cards makes bidding 3 points worthwhile despite some lower cards."}
+2025-09-02 22:01:56:807655 - [DEBUG]: Player 2 choose to bid with 3 points
+2025-09-02 22:01:56:807777 - [DEBUG]: Player 3 is making a bidding decision for the final round 
+2025-09-02 22:01:58:201059 - [DEBUG]: extracted json string is: {
+    "action": 0,
+    "reason": "My cards are not strong enough to risk doubling the bid. I have a pair of 2s which is good, and a triple of 6s, but lack strong single cards or other high-ranking combinations like bombs or a joker. Becoming a landlord with these cards at 6 points would be too risky against two farmers."
+}
+2025-09-02 22:01:58:201800 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'My cards are not strong enough to risk doubling the bid. I have a pair of 2s which is good, and a triple of 6s, but lack strong single cards or other high-ranking combinations like bombs or a joker. Becoming a landlord with these cards at 6 points would be too risky against two farmers.'}
+2025-09-02 22:01:58:202281 - [DEBUG]: Player 3 choose to pass
+2025-09-02 22:01:58:202528 - [DEBUG]: Final landlord is Player 2
+2025-09-02 22:01:58:202683 - [DEBUG]: Bidding END
+2025-09-02 22:35:36:618729 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 22:35:36:618867 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 22:35:36:618915 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 22:35:36:618955 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 22:35:36:618989 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 22:35:36:619022 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 22:35:36:619053 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 22:35:36:619108 - [DEBUG]: Player 1 hands: [('Q', 1, 9), ('3', 0, 0), ('Q', 0, 9), ('2', 0, 12), ('2', 1, 12), ('A', 1, 11), ('5', 2, 2), ('2', 3, 12), ('K', 2, 10), ('2', 2, 12), ('10', 2, 7), ('7', 3, 4), ('J', 1, 8), ('4', 2, 1), ('10', 1, 7), ('7', 2, 4), ('4', 1, 1)]
+2025-09-02 22:35:36:619142 - [DEBUG]: Player 2 hands: [('A', 3, 11), ('J', 3, 8), ('9', 0, 6), ('7', 1, 4), ('J', 2, 8), ('K', 1, 10), ('Q', 3, 9), ('Red Joker', -1, 14), ('8', 0, 5), ('8', 3, 5), ('4', 0, 1), ('J', 0, 8), ('6', 2, 3), ('9', 1, 6), ('A', 0, 11), ('7', 0, 4), ('10', 0, 7)]
+2025-09-02 22:35:36:619177 - [DEBUG]: Player 3 hands: [('8', 2, 5), ('K', 0, 10), ('8', 1, 5), ('5', 0, 2), ('6', 0, 3), ('5', 3, 2), ('K', 3, 10), ('3', 1, 0), ('10', 3, 7), ('9', 3, 6), ('Q', 2, 9), ('6', 3, 3), ('9', 2, 6), ('4', 3, 1), ('Black Joker', -1, 13), ('3', 2, 0), ('6', 1, 3)]
+2025-09-02 22:35:36:619210 - [DEBUG]: Landlord cards: [('5', 1, 2), ('A', 2, 11), ('3', 3, 0)]
+2025-09-02 22:35:36:619244 - [DEBUG]: Bidding started
+
+2025-09-02 22:35:36:619277 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 22:35:36:619314 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('Q', 1, 9), ('3', 0, 0), ('Q', 0, 9), ('2', 0, 12), ('2', 1, 12), ('A', 1, 11), ('5', 2, 2), ('2', 3, 12), ('K', 2, 10), ('2', 2, 12), ('10', 2, 7), ('7', 3, 4), ('J', 1, 8), ('4', 2, 1), ('10', 1, 7), ('7', 2, 4), ('4', 1, 1)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 22:35:38:046961 - [DEBUG]: current brain is: <function llama_3_3 at 0x10bf14d60>
+2025-09-02 22:35:38:047232 - [DEBUG]: Player 1 bidding result: {"action": 1, "reason": "I have a moderate hand with some high-ranking cards like Queen, King, and Jack, but not enough to secure a high bid, so I'll start with a bid of 1 point to establish my position and see how the next player reacts."} 
+
+2025-09-02 22:35:38:047577 - [DEBUG]: current brain is: <function llama_3_3 at 0x10bf14d60>
+2025-09-02 22:35:38:047672 - [DEBUG]: Player 1 bidding result: {"action": 1, "reason": "I have a moderate hand with some high-ranking cards like Queen, King, and Jack, but not enough to secure a high bid, so I'll start with a bid of 1 point to establish my position and see how the next player reacts."} 
+
+2025-09-02 22:35:38:047756 - [DEBUG]: extracted json string is: {"action": 1, "reason": "I have a moderate hand with some high-ranking cards like Queen, King, and Jack, but not enough to secure a high bid, so I'll start with a bid of 1 point to establish my position and see how the next player reacts."}
+2025-09-02 22:35:38:047830 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': "I have a moderate hand with some high-ranking cards like Queen, King, and Jack, but not enough to secure a high bid, so I'll start with a bid of 1 point to establish my position and see how the next player reacts."}
+2025-09-02 22:35:38:047885 - [DEBUG]: Player 1 choose to bid with 1 point
+2025-09-02 22:35:38:047950 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 22:35:38:048024 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('A', 3, 11), ('J', 3, 8), ('9', 0, 6), ('7', 1, 4), ('J', 2, 8), ('K', 1, 10), ('Q', 3, 9), ('Red Joker', -1, 14), ('8', 0, 5), ('8', 3, 5), ('4', 0, 1), ('J', 0, 8), ('6', 2, 3), ('9', 1, 6), ('A', 0, 11), ('7', 0, 4), ('10', 0, 7)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 22:35:49:844858 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10bdd6a20>
+2025-09-02 22:35:49:845538 - [DEBUG]: Player 2 bidding result: Okay, so I'm in the bidding phase of the game "斗地主" and I'm the second bidder. The current highest bid is 1 point. My cards are pretty mixed but I have a Red Joker, which is the highest card in the game. That's a strong point because a Joker Bomb is unbeatable. Let's see, I also have some pairs and potential combinations like a pair of Jacks, Aces, and 8s, plus a few other cards. 
+
+The thing is, having the Red Joker gives me a significant advantage if I become the landlord because I can use it to control the game. However, I don't have a lot of bombs (four of a kind) or strong sequences like straights or double sequences. My hand is decent but not super strong otherwise. 
+
+Since the current bid is 1, I could bid 2 to try to take the landlord role. Bidding 2 would still be a moderate risk, but with the Red Joker, it might be worth it. If I win the bid, I get the three bottom cards, which could improve my hand. But if I overcommit and bid 3, it might be too risky because my other cards aren't that strong. 
+
+I think bidding 2 is reasonable here. It's a balanced move—higher than the current bid but not the maximum. It shows confidence without being too aggressive. Plus, if the next player passes or bids lower, I might get the landlord role, and with the Red Joker, I can have a good chance to win. If they bid higher, I can still consider my options. 
+
+Alternatively, I could pass, but with the Red Joker, I feel like I should take some initiative. Bidding 1 is the same as the current highest, so it doesn't help. Bidding 3 might be overkill. So, 2 seems like the sweet spot for now.
+{ "action": 2, "reason": "My hand contains the Red Joker, which is a strong advantage, and several pairs (J, A, 8) that can form combinations. Bidding 2 points balances risk and potential reward, aiming to secure the landlord role without overcommitting." } 
+
+2025-09-02 22:35:49:846080 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10bdd6a20>
+2025-09-02 22:35:49:846328 - [DEBUG]: Player 2 bidding result: Okay, so I'm in the bidding phase of the game "斗地主" and I'm the second bidder. The current highest bid is 1 point. My cards are pretty mixed but I have a Red Joker, which is the highest card in the game. That's a strong point because a Joker Bomb is unbeatable. Let's see, I also have some pairs and potential combinations like a pair of Jacks, Aces, and 8s, plus a few other cards. 
+
+The thing is, having the Red Joker gives me a significant advantage if I become the landlord because I can use it to control the game. However, I don't have a lot of bombs (four of a kind) or strong sequences like straights or double sequences. My hand is decent but not super strong otherwise. 
+
+Since the current bid is 1, I could bid 2 to try to take the landlord role. Bidding 2 would still be a moderate risk, but with the Red Joker, it might be worth it. If I win the bid, I get the three bottom cards, which could improve my hand. But if I overcommit and bid 3, it might be too risky because my other cards aren't that strong. 
+
+I think bidding 2 is reasonable here. It's a balanced move—higher than the current bid but not the maximum. It shows confidence without being too aggressive. Plus, if the next player passes or bids lower, I might get the landlord role, and with the Red Joker, I can have a good chance to win. If they bid higher, I can still consider my options. 
+
+Alternatively, I could pass, but with the Red Joker, I feel like I should take some initiative. Bidding 1 is the same as the current highest, so it doesn't help. Bidding 3 might be overkill. So, 2 seems like the sweet spot for now.
+{ "action": 2, "reason": "My hand contains the Red Joker, which is a strong advantage, and several pairs (J, A, 8) that can form combinations. Bidding 2 points balances risk and potential reward, aiming to secure the landlord role without overcommitting." } 
+
+2025-09-02 22:35:49:846612 - [DEBUG]: extracted json string is: { "action": 2, "reason": "My hand contains the Red Joker, which is a strong advantage, and several pairs (J, A, 8) that can form combinations. Bidding 2 points balances risk and potential reward, aiming to secure the landlord role without overcommitting." }
+2025-09-02 22:35:49:846843 - [DEBUG]: After parsing the bidding result: {'action': 2, 'reason': 'My hand contains the Red Joker, which is a strong advantage, and several pairs (J, A, 8) that can form combinations. Bidding 2 points balances risk and potential reward, aiming to secure the landlord role without overcommitting.'}
+2025-09-02 22:35:49:847006 - [DEBUG]: Player 2 choose to bid with 2 points
+2025-09-02 22:35:49:847158 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 22:35:49:847331 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 2 points.
+Your cards are: [('8', 2, 5), ('K', 0, 10), ('8', 1, 5), ('5', 0, 2), ('6', 0, 3), ('5', 3, 2), ('K', 3, 10), ('3', 1, 0), ('10', 3, 7), ('9', 3, 6), ('Q', 2, 9), ('6', 3, 3), ('9', 2, 6), ('4', 3, 1), ('Black Joker', -1, 13), ('3', 2, 0), ('6', 1, 3)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 22:35:51:379323 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10bf14ae0>
+2025-09-02 22:35:51:380081 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Black Joker, two pairs of 6s, two pairs of 8s, two pairs of 9s and a K, and a 10. While I don't have a bomb, the Black Joker gives me a good chance to control the later rounds. Bidding 3 points maximizes my potential winnings and gives me the landlord role."
+}
+``` 
+
+2025-09-02 22:35:51:380670 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10bf14ae0>
+2025-09-02 22:35:51:381028 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with a Black Joker, two pairs of 6s, two pairs of 8s, two pairs of 9s and a K, and a 10. While I don't have a bomb, the Black Joker gives me a good chance to control the later rounds. Bidding 3 points maximizes my potential winnings and gives me the landlord role."
+}
+``` 
+
+2025-09-02 22:35:51:381274 - [DEBUG]: extracted json string is: {
+  "action": 3,
+  "reason": "I have a strong hand with a Black Joker, two pairs of 6s, two pairs of 8s, two pairs of 9s and a K, and a 10. While I don't have a bomb, the Black Joker gives me a good chance to control the later rounds. Bidding 3 points maximizes my potential winnings and gives me the landlord role."
+}
+2025-09-02 22:35:51:381464 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': "I have a strong hand with a Black Joker, two pairs of 6s, two pairs of 8s, two pairs of 9s and a K, and a 10. While I don't have a bomb, the Black Joker gives me a good chance to control the later rounds. Bidding 3 points maximizes my potential winnings and gives me the landlord role."}
+2025-09-02 22:35:51:381608 - [DEBUG]: Player 3 choose to bid with 3 points
+2025-09-02 22:35:51:381757 - [DEBUG]: Player 1 is making a bidding decision for the final round 
+2025-09-02 22:35:52:617300 - [DEBUG]: extracted json string is: {"action": 6, "reason": "I choose to bid 6 points (double the current highest bid of 3 points) because I have a pair of Q's and several pairs of 2's, which might be useful in the game, and I want to increase my chances of becoming the landlord to potentially gain more points if I win."}
+2025-09-02 22:35:52:617869 - [DEBUG]: After parsing the bidding result: {'action': 6, 'reason': "I choose to bid 6 points (double the current highest bid of 3 points) because I have a pair of Q's and several pairs of 2's, which might be useful in the game, and I want to increase my chances of becoming the landlord to potentially gain more points if I win."}
+2025-09-02 22:35:52:618393 - [DEBUG]: Player 1 final bid: 6 points
+2025-09-02 22:35:52:618635 - [DEBUG]: Final landlord is Player 1
+2025-09-02 22:35:52:618780 - [DEBUG]: Bidding END
+2025-09-02 23:38:38:125955 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 23:38:38:126212 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 23:38:38:126250 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 23:38:38:126281 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 23:38:38:126356 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 23:38:38:126386 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 23:38:38:126415 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 23:38:38:126466 - [DEBUG]: Player 1 hands: [('3', 0, 0), ('7', 2, 4), ('6', 1, 3), ('3', 3, 0), ('5', 0, 2), ('10', 3, 7), ('5', 1, 2), ('K', 1, 10), ('6', 3, 3), ('2', 0, 12), ('8', 3, 5), ('8', 1, 5), ('K', 3, 10), ('9', 2, 6), ('7', 1, 4), ('Red Joker', -1, 14), ('9', 1, 6)]
+2025-09-02 23:38:38:126497 - [DEBUG]: Player 2 hands: [('6', 2, 3), ('A', 0, 11), ('3', 2, 0), ('A', 1, 11), ('5', 2, 2), ('10', 1, 7), ('10', 0, 7), ('6', 0, 3), ('Q', 1, 9), ('J', 2, 8), ('J', 1, 8), ('3', 1, 0), ('A', 3, 11), ('4', 2, 1), ('K', 0, 10), ('8', 2, 5), ('7', 0, 4)]
+2025-09-02 23:38:38:126527 - [DEBUG]: Player 3 hands: [('Q', 3, 9), ('4', 0, 1), ('9', 0, 6), ('J', 0, 8), ('9', 3, 6), ('7', 3, 4), ('Black Joker', -1, 13), ('4', 1, 1), ('2', 2, 12), ('A', 2, 11), ('8', 0, 5), ('Q', 0, 9), ('K', 2, 10), ('5', 3, 2), ('J', 3, 8), ('4', 3, 1), ('10', 2, 7)]
+2025-09-02 23:38:38:126554 - [DEBUG]: Landlord cards: [('Q', 2, 9), ('2', 3, 12), ('2', 1, 12)]
+2025-09-02 23:38:38:126586 - [DEBUG]: Bidding started
+
+2025-09-02 23:38:38:126615 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 23:38:38:126651 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('Q', 3, 9), ('4', 0, 1), ('9', 0, 6), ('J', 0, 8), ('9', 3, 6), ('7', 3, 4), ('Black Joker', -1, 13), ('4', 1, 1), ('2', 2, 12), ('A', 2, 11), ('8', 0, 5), ('Q', 0, 9), ('K', 2, 10), ('5', 3, 2), ('J', 3, 8), ('4', 3, 1), ('10', 2, 7)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 23:38:39:645913 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x107c94ae0>
+2025-09-02 23:38:39:646328 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 1,
+  "reason": "As the first bidder, I have a strong '2' and a 'Black Joker', which are high-ranking cards. I also have several pairs (4,4,4; 9,9; J,J; Q,Q) that could form powerful combinations, especially if I get complementary cards from the bottom three. Bidding 1 point allows me to enter the bidding war and potentially secure the Landlord role."
+}
+``` 
+
+2025-09-02 23:38:39:646442 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x107c94ae0>
+2025-09-02 23:38:39:646519 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 1,
+  "reason": "As the first bidder, I have a strong '2' and a 'Black Joker', which are high-ranking cards. I also have several pairs (4,4,4; 9,9; J,J; Q,Q) that could form powerful combinations, especially if I get complementary cards from the bottom three. Bidding 1 point allows me to enter the bidding war and potentially secure the Landlord role."
+}
+``` 
+
+2025-09-02 23:38:39:646630 - [DEBUG]: extracted json string is: {
+  "action": 1,
+  "reason": "As the first bidder, I have a strong '2' and a 'Black Joker', which are high-ranking cards. I also have several pairs (4,4,4; 9,9; J,J; Q,Q) that could form powerful combinations, especially if I get complementary cards from the bottom three. Bidding 1 point allows me to enter the bidding war and potentially secure the Landlord role."
+}
+2025-09-02 23:38:39:646733 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': "As the first bidder, I have a strong '2' and a 'Black Joker', which are high-ranking cards. I also have several pairs (4,4,4; 9,9; J,J; Q,Q) that could form powerful combinations, especially if I get complementary cards from the bottom three. Bidding 1 point allows me to enter the bidding war and potentially secure the Landlord role."}
+2025-09-02 23:38:39:646807 - [DEBUG]: Player 3 choose to bid with 1 point
+2025-09-02 23:38:39:646878 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-02 23:38:39:646964 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('3', 0, 0), ('7', 2, 4), ('6', 1, 3), ('3', 3, 0), ('5', 0, 2), ('10', 3, 7), ('5', 1, 2), ('K', 1, 10), ('6', 3, 3), ('2', 0, 12), ('8', 3, 5), ('8', 1, 5), ('K', 3, 10), ('9', 2, 6), ('7', 1, 4), ('Red Joker', -1, 14), ('9', 1, 6)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 23:38:41:136232 - [DEBUG]: current brain is: <function llama_3_3 at 0x107c94d60>
+2025-09-02 23:38:41:136916 - [DEBUG]: Player 1 bidding result: {"action": 1, "reason": "I chose to bid 1 point because my cards have some high-ranking cards like the Red Joker and Kings, which could potentially give me a strong advantage in the game, and I want to take the chance to become the landlord to get more points if I win."} 
+
+2025-09-02 23:38:41:137500 - [DEBUG]: current brain is: <function llama_3_3 at 0x107c94d60>
+2025-09-02 23:38:41:137739 - [DEBUG]: Player 1 bidding result: {"action": 1, "reason": "I chose to bid 1 point because my cards have some high-ranking cards like the Red Joker and Kings, which could potentially give me a strong advantage in the game, and I want to take the chance to become the landlord to get more points if I win."} 
+
+2025-09-02 23:38:41:137989 - [DEBUG]: extracted json string is: {"action": 1, "reason": "I chose to bid 1 point because my cards have some high-ranking cards like the Red Joker and Kings, which could potentially give me a strong advantage in the game, and I want to take the chance to become the landlord to get more points if I win."}
+2025-09-02 23:38:41:138256 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': 'I chose to bid 1 point because my cards have some high-ranking cards like the Red Joker and Kings, which could potentially give me a strong advantage in the game, and I want to take the chance to become the landlord to get more points if I win.'}
+2025-09-02 23:38:41:138451 - [DEBUG]: Player 1 choose to bid with 1 point
+2025-09-02 23:38:41:138621 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 23:38:41:138796 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 1 points.
+Your cards are: [('6', 2, 3), ('A', 0, 11), ('3', 2, 0), ('A', 1, 11), ('5', 2, 2), ('10', 1, 7), ('10', 0, 7), ('6', 0, 3), ('Q', 1, 9), ('J', 2, 8), ('J', 1, 8), ('3', 1, 0), ('A', 3, 11), ('4', 2, 1), ('K', 0, 10), ('8', 2, 5), ('7', 0, 4)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 23:38:51:477345 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x107b56a20>
+2025-09-02 23:38:51:478016 - [DEBUG]: Player 2 bidding result: Alright, let's see. I'm the third bidder, and the current highest bid is 1 point. My cards are pretty mixed. I have a couple of Aces and Kings, which are high-value cards, but not too many pairs or sequences. There's a pair of Jacks and a pair of 10s, but no triples or anything stronger like a bomb or a joker bomb. 
+
+Since the highest bid is only 1, I could consider bidding 2 to try to become the landlord, but looking at my hand, I don't have a very strong combination to ensure I can win. The risk is that if I take the landlord role, I might struggle to play all my cards first. Plus, there's a chance the first player might double the bid, making it even riskier. 
+
+Given that my hand isn't super strong and the potential risk of higher points, it's probably safer to pass here. I don't want to get stuck with the landlord role with a mediocre hand and risk losing more points. Better to let someone else take it and play as a farmer. 
+
+So, the decision is to pass. The reason is that my cards aren't strong enough to justify becoming the landlord, and the current bid isn't worth the risk.
+{
+  "action": 0,
+  "reason": "The hand lacks strong combinations (only pairs of J and 10, no bombs/triples/sequences) and the current bidding is at 1 point. Becoming landlord with this weak hand would be risky, so passing is safer."
+} 
+
+2025-09-02 23:38:51:478539 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x107b56a20>
+2025-09-02 23:38:51:478801 - [DEBUG]: Player 2 bidding result: Alright, let's see. I'm the third bidder, and the current highest bid is 1 point. My cards are pretty mixed. I have a couple of Aces and Kings, which are high-value cards, but not too many pairs or sequences. There's a pair of Jacks and a pair of 10s, but no triples or anything stronger like a bomb or a joker bomb. 
+
+Since the highest bid is only 1, I could consider bidding 2 to try to become the landlord, but looking at my hand, I don't have a very strong combination to ensure I can win. The risk is that if I take the landlord role, I might struggle to play all my cards first. Plus, there's a chance the first player might double the bid, making it even riskier. 
+
+Given that my hand isn't super strong and the potential risk of higher points, it's probably safer to pass here. I don't want to get stuck with the landlord role with a mediocre hand and risk losing more points. Better to let someone else take it and play as a farmer. 
+
+So, the decision is to pass. The reason is that my cards aren't strong enough to justify becoming the landlord, and the current bid isn't worth the risk.
+{
+  "action": 0,
+  "reason": "The hand lacks strong combinations (only pairs of J and 10, no bombs/triples/sequences) and the current bidding is at 1 point. Becoming landlord with this weak hand would be risky, so passing is safer."
+} 
+
+2025-09-02 23:38:51:479349 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "The hand lacks strong combinations (only pairs of J and 10, no bombs/triples/sequences) and the current bidding is at 1 point. Becoming landlord with this weak hand would be risky, so passing is safer."
+}
+2025-09-02 23:38:51:479677 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'The hand lacks strong combinations (only pairs of J and 10, no bombs/triples/sequences) and the current bidding is at 1 point. Becoming landlord with this weak hand would be risky, so passing is safer.'}
+2025-09-02 23:38:51:479826 - [DEBUG]: Player 2 choose to pass
+2025-09-02 23:38:51:479976 - [DEBUG]: Player 3 is making a bidding decision for the final round 
+2025-09-02 23:38:52:750069 - [DEBUG]: extracted json string is: {
+  "action": 2,
+  "reason": "I have a strong hand with a '2', two 'Q's, two 'J's, three '4's (which is a potential bomb if I acquire another '4' from the bottom cards), and a Black Joker. Although the current highest bid is 0, bidding 2 points to become the landlord is a good strategic move to increase my winning opportunity."
+}
+2025-09-02 23:38:52:751064 - [DEBUG]: After parsing the bidding result: {'action': 2, 'reason': "I have a strong hand with a '2', two 'Q's, two 'J's, three '4's (which is a potential bomb if I acquire another '4' from the bottom cards), and a Black Joker. Although the current highest bid is 0, bidding 2 points to become the landlord is a good strategic move to increase my winning opportunity."}
+2025-09-02 23:38:52:751578 - [DEBUG]: Player 3 final bid: 2 points
+2025-09-02 23:38:52:751860 - [DEBUG]: Final landlord is Player 3
+2025-09-02 23:38:52:752036 - [DEBUG]: Bidding END
+2025-09-02 23:51:51:521976 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 23:51:51:522081 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 23:51:51:522118 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 23:51:51:522149 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 23:51:51:522177 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 23:51:51:522203 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 23:51:51:522229 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 23:51:51:522277 - [DEBUG]: Player 1 hands: [('9', 1, 6), ('2', 1, 12), ('A', 2, 11), ('8', 1, 5), ('10', 2, 7), ('A', 3, 11), ('3', 1, 0), ('Q', 1, 9), ('J', 3, 8), ('Black Joker', -1, 13), ('8', 0, 5), ('7', 0, 4), ('4', 1, 1), ('4', 3, 1), ('J', 2, 8), ('4', 0, 1), ('7', 2, 4)]
+2025-09-02 23:51:51:522307 - [DEBUG]: Player 2 hands: [('Q', 0, 9), ('A', 0, 11), ('7', 1, 4), ('5', 1, 2), ('9', 3, 6), ('10', 3, 7), ('10', 1, 7), ('A', 1, 11), ('Q', 3, 9), ('2', 0, 12), ('Red Joker', -1, 14), ('6', 1, 3), ('J', 0, 8), ('6', 2, 3), ('3', 2, 0), ('10', 0, 7), ('2', 3, 12)]
+2025-09-02 23:51:51:522335 - [DEBUG]: Player 3 hands: [('K', 0, 10), ('9', 2, 6), ('K', 3, 10), ('J', 1, 8), ('5', 2, 2), ('9', 0, 6), ('6', 3, 3), ('8', 3, 5), ('5', 0, 2), ('4', 2, 1), ('Q', 2, 9), ('3', 3, 0), ('K', 2, 10), ('2', 2, 12), ('K', 1, 10), ('3', 0, 0), ('6', 0, 3)]
+2025-09-02 23:51:51:522360 - [DEBUG]: Landlord cards: [('7', 3, 4), ('8', 2, 5), ('5', 3, 2)]
+2025-09-02 23:51:51:522388 - [DEBUG]: Bidding started
+
+2025-09-02 23:51:51:522414 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 23:51:51:522447 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('Q', 0, 9), ('A', 0, 11), ('7', 1, 4), ('5', 1, 2), ('9', 3, 6), ('10', 3, 7), ('10', 1, 7), ('A', 1, 11), ('Q', 3, 9), ('2', 0, 12), ('Red Joker', -1, 14), ('6', 1, 3), ('J', 0, 8), ('6', 2, 3), ('3', 2, 0), ('10', 0, 7), ('2', 3, 12)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 23:52:05:040378 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10bc2aa20>
+2025-09-02 23:52:05:040890 - [DEBUG]: Player 2 bidding result: Okay, let's see. I'm the first bidder in the landlord bidding phase. My cards are: Q, A, 7, 5, 9, 10, 10, A, Q, 2, Red Joker, 6, J, 6, 3, 10, 2. That's 17 cards.
+
+First, I need to assess how strong my hand is. I have a Red Joker, which is the highest card, and two 2s, which are pretty strong. Also, I have two Aces and two Queens, which are decent. There are some pairs and potential combinations like the two 10s and two 6s. 
+
+The Red Joker alone is great because it's part of the Joker Bomb if I had the Black Joker too, but I don't. Still, it's a strong card. The two 2s are also valuable since 2 is the highest rank besides the jokers. 
+
+I also have a pair of Aces and Queens, which can be useful. The other cards are a bit scattered, but there are some potential straights or pairs. However, I don't see any bombs (four of a kind) in my hand. 
+
+Since I'm the first bidder, bidding 3 points would immediately make me the landlord, but that's risky if my hand isn't strong enough. Bidding 1 or 2 gives others a chance to outbid me. 
+
+But given the Red Joker and two 2s, I think I can take the risk. Even though I don't have a bomb, the high cards and potential combinations might be enough. Plus, becoming landlord gets me the bottom three cards, which could improve my hand. 
+
+I'll go for the maximum bid to secure the landlord role. If I win, I can potentially score more points, and my current hand seems strong enough to justify it.
+{ "action": 3, "reason": "Strong hand with Red Joker and two 2s, high potential with bottom cards. Bidding 3 to secure landlord role for higher rewards." } 
+
+2025-09-02 23:52:05:041406 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10bc2aa20>
+2025-09-02 23:52:05:041602 - [DEBUG]: Player 2 bidding result: Okay, let's see. I'm the first bidder in the landlord bidding phase. My cards are: Q, A, 7, 5, 9, 10, 10, A, Q, 2, Red Joker, 6, J, 6, 3, 10, 2. That's 17 cards.
+
+First, I need to assess how strong my hand is. I have a Red Joker, which is the highest card, and two 2s, which are pretty strong. Also, I have two Aces and two Queens, which are decent. There are some pairs and potential combinations like the two 10s and two 6s. 
+
+The Red Joker alone is great because it's part of the Joker Bomb if I had the Black Joker too, but I don't. Still, it's a strong card. The two 2s are also valuable since 2 is the highest rank besides the jokers. 
+
+I also have a pair of Aces and Queens, which can be useful. The other cards are a bit scattered, but there are some potential straights or pairs. However, I don't see any bombs (four of a kind) in my hand. 
+
+Since I'm the first bidder, bidding 3 points would immediately make me the landlord, but that's risky if my hand isn't strong enough. Bidding 1 or 2 gives others a chance to outbid me. 
+
+But given the Red Joker and two 2s, I think I can take the risk. Even though I don't have a bomb, the high cards and potential combinations might be enough. Plus, becoming landlord gets me the bottom three cards, which could improve my hand. 
+
+I'll go for the maximum bid to secure the landlord role. If I win, I can potentially score more points, and my current hand seems strong enough to justify it.
+{ "action": 3, "reason": "Strong hand with Red Joker and two 2s, high potential with bottom cards. Bidding 3 to secure landlord role for higher rewards." } 
+
+2025-09-02 23:52:05:041771 - [DEBUG]: extracted json string is: { "action": 3, "reason": "Strong hand with Red Joker and two 2s, high potential with bottom cards. Bidding 3 to secure landlord role for higher rewards." }
+2025-09-02 23:52:05:041873 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'Strong hand with Red Joker and two 2s, high potential with bottom cards. Bidding 3 to secure landlord role for higher rewards.'}
+2025-09-02 23:52:05:041952 - [DEBUG]: Player 2 choose to bid with 3 points
+2025-09-02 23:52:05:042043 - [DEBUG]: Final landlord is Player 2
+2025-09-02 23:52:05:042115 - [DEBUG]: Bidding END
+2025-09-02 23:55:19:253019 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-02 23:55:19:253172 - [DEBUG]: Player Player 1 joined the game.
+2025-09-02 23:55:19:253444 - [DEBUG]: Current players: ['Player 1']
+2025-09-02 23:55:19:253483 - [DEBUG]: Player Player 2 joined the game.
+2025-09-02 23:55:19:253521 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-02 23:55:19:253557 - [DEBUG]: Player Player 3 joined the game.
+2025-09-02 23:55:19:253591 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-02 23:55:19:253655 - [DEBUG]: Player 1 hands: [('2', 3, 12), ('Q', 0, 9), ('A', 0, 11), ('A', 3, 11), ('8', 1, 5), ('Red Joker', -1, 14), ('5', 3, 2), ('A', 2, 11), ('6', 0, 3), ('Black Joker', -1, 13), ('J', 3, 8), ('2', 2, 12), ('3', 0, 0), ('6', 3, 3), ('K', 3, 10), ('2', 1, 12), ('Q', 3, 9)]
+2025-09-02 23:55:19:253692 - [DEBUG]: Player 2 hands: [('6', 2, 3), ('K', 2, 10), ('10', 3, 7), ('4', 1, 1), ('7', 3, 4), ('10', 0, 7), ('J', 2, 8), ('9', 2, 6), ('Q', 1, 9), ('K', 0, 10), ('9', 1, 6), ('3', 3, 0), ('8', 0, 5), ('5', 1, 2), ('J', 0, 8), ('10', 1, 7), ('4', 0, 1)]
+2025-09-02 23:55:19:253731 - [DEBUG]: Player 3 hands: [('7', 1, 4), ('5', 2, 2), ('10', 2, 7), ('9', 0, 6), ('9', 3, 6), ('3', 2, 0), ('A', 1, 11), ('7', 0, 4), ('3', 1, 0), ('K', 1, 10), ('8', 3, 5), ('Q', 2, 9), ('5', 0, 2), ('J', 1, 8), ('6', 1, 3), ('4', 2, 1), ('2', 0, 12)]
+2025-09-02 23:55:19:253763 - [DEBUG]: Landlord cards: [('7', 2, 4), ('4', 3, 1), ('8', 2, 5)]
+2025-09-02 23:55:19:253798 - [DEBUG]: Bidding started
+
+2025-09-02 23:55:19:253832 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-02 23:55:19:253879 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('6', 2, 3), ('K', 2, 10), ('10', 3, 7), ('4', 1, 1), ('7', 3, 4), ('10', 0, 7), ('J', 2, 8), ('9', 2, 6), ('Q', 1, 9), ('K', 0, 10), ('9', 1, 6), ('3', 3, 0), ('8', 0, 5), ('5', 1, 2), ('J', 0, 8), ('10', 1, 7), ('4', 0, 1)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 23:55:34:938313 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10bcdea20>
+2025-09-02 23:55:34:938671 - [DEBUG]: Player 2 bidding result: Alright, let's take a look at the cards I have. I'm the first bidder in this game of "斗地主". My hand has 17 cards, and I need to decide whether to bid or pass. 
+
+First, I'll evaluate the strength of my cards. I have two Kings ('K', 2, 10 and 'K', 0, 10), which are high-ranking cards. There's also a Queen ('Q', 1, 9), two Jacks ('J', 2, 8 and 'J', 0, 8), and three 10s ('10', 3, 7; '10', 0, 7; '10', 1, 7). The presence of multiple high cards is good.
+
+Looking for potential combinations: I have a pair of Kings, a pair of Jacks, and three 10s, which can form a triple. There are also some lower pairs like the 9s ('9', 2, 6 and '9', 1, 6) and 4s ('4', 1, 1 and '4', 0, 1). However, I don't see any bombs (four of a kind) or jokers in my hand. 
+
+The absence of bombs or jokers is a concern because bombs are powerful in this game. Also, my low cards include 3, 4, 5, 6, 7, 8, which are not very strong. I don't have a strong sequence (straight) either.
+
+Since I'm the first bidder, I can try to take the landlord role, but my hand isn't strong enough to justify a high bid. Bidding 1 point is a safe option to test the waters without overcommitting. If others bid higher, I can pass later. 
+
+I'll go with a bid of 1 point. This way, I can see how the others respond and decide accordingly without risking too many points.
+{ "action": 1, "reason": "The hand has some high cards like K, Q, and J, but lacks bombs or strong sequences. A bid of 1 is cautious, allowing to test the waters without overcommitting." } 
+
+2025-09-02 23:55:34:938886 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x10bcdea20>
+2025-09-02 23:55:34:938999 - [DEBUG]: Player 2 bidding result: Alright, let's take a look at the cards I have. I'm the first bidder in this game of "斗地主". My hand has 17 cards, and I need to decide whether to bid or pass. 
+
+First, I'll evaluate the strength of my cards. I have two Kings ('K', 2, 10 and 'K', 0, 10), which are high-ranking cards. There's also a Queen ('Q', 1, 9), two Jacks ('J', 2, 8 and 'J', 0, 8), and three 10s ('10', 3, 7; '10', 0, 7; '10', 1, 7). The presence of multiple high cards is good.
+
+Looking for potential combinations: I have a pair of Kings, a pair of Jacks, and three 10s, which can form a triple. There are also some lower pairs like the 9s ('9', 2, 6 and '9', 1, 6) and 4s ('4', 1, 1 and '4', 0, 1). However, I don't see any bombs (four of a kind) or jokers in my hand. 
+
+The absence of bombs or jokers is a concern because bombs are powerful in this game. Also, my low cards include 3, 4, 5, 6, 7, 8, which are not very strong. I don't have a strong sequence (straight) either.
+
+Since I'm the first bidder, I can try to take the landlord role, but my hand isn't strong enough to justify a high bid. Bidding 1 point is a safe option to test the waters without overcommitting. If others bid higher, I can pass later. 
+
+I'll go with a bid of 1 point. This way, I can see how the others respond and decide accordingly without risking too many points.
+{ "action": 1, "reason": "The hand has some high cards like K, Q, and J, but lacks bombs or strong sequences. A bid of 1 is cautious, allowing to test the waters without overcommitting." } 
+
+2025-09-02 23:55:34:939185 - [DEBUG]: extracted json string is: { "action": 1, "reason": "The hand has some high cards like K, Q, and J, but lacks bombs or strong sequences. A bid of 1 is cautious, allowing to test the waters without overcommitting." }
+2025-09-02 23:55:34:939294 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': 'The hand has some high cards like K, Q, and J, but lacks bombs or strong sequences. A bid of 1 is cautious, allowing to test the waters without overcommitting.'}
+2025-09-02 23:55:34:939377 - [DEBUG]: Player 2 choose to bid with 1 point
+2025-09-02 23:55:34:939468 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-02 23:55:34:939568 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('7', 1, 4), ('5', 2, 2), ('10', 2, 7), ('9', 0, 6), ('9', 3, 6), ('3', 2, 0), ('A', 1, 11), ('7', 0, 4), ('3', 1, 0), ('K', 1, 10), ('8', 3, 5), ('Q', 2, 9), ('5', 0, 2), ('J', 1, 8), ('6', 1, 3), ('4', 2, 1), ('2', 0, 12)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-02 23:55:36:283988 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10bdf8ae0>
+2025-09-02 23:55:36:284637 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a 2, a pair of 3s, a pair of 5s, a pair of 7s, and a pair of 9s, plus a King, Ace, Queen, and Jack. This hand has several potential pairs and strong single cards, including a 2. Bidding 3 points is aggressive, but with these cards, especially the 2 and multiple pairs, I have a good chance to win as the landlord."
+}
+``` 
+
+2025-09-02 23:55:36:284997 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x10bdf8ae0>
+2025-09-02 23:55:36:285159 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a 2, a pair of 3s, a pair of 5s, a pair of 7s, and a pair of 9s, plus a King, Ace, Queen, and Jack. This hand has several potential pairs and strong single cards, including a 2. Bidding 3 points is aggressive, but with these cards, especially the 2 and multiple pairs, I have a good chance to win as the landlord."
+}
+``` 
+
+2025-09-02 23:55:36:285314 - [DEBUG]: extracted json string is: {
+  "action": 3,
+  "reason": "I have a 2, a pair of 3s, a pair of 5s, a pair of 7s, and a pair of 9s, plus a King, Ace, Queen, and Jack. This hand has several potential pairs and strong single cards, including a 2. Bidding 3 points is aggressive, but with these cards, especially the 2 and multiple pairs, I have a good chance to win as the landlord."
+}
+2025-09-02 23:55:36:285498 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I have a 2, a pair of 3s, a pair of 5s, a pair of 7s, and a pair of 9s, plus a King, Ace, Queen, and Jack. This hand has several potential pairs and strong single cards, including a 2. Bidding 3 points is aggressive, but with these cards, especially the 2 and multiple pairs, I have a good chance to win as the landlord.'}
+2025-09-02 23:55:36:285630 - [DEBUG]: Player 3 choose to bid with 3 points
+2025-09-02 23:55:36:285722 - [DEBUG]: Player 2 is making a bidding decision for the final round 
+2025-09-02 23:55:41:493638 - [DEBUG]: extracted json string is: {
+  "action": 0,
+  "reason": "My hand lacks strong combinations like bombs or jokers, and has mostly medium to low-ranking cards. Doubling the bid to 6 points is too risky without a powerful hand to secure victory as the landlord."
+}
+2025-09-02 23:55:41:494002 - [DEBUG]: After parsing the bidding result: {'action': 0, 'reason': 'My hand lacks strong combinations like bombs or jokers, and has mostly medium to low-ranking cards. Doubling the bid to 6 points is too risky without a powerful hand to secure victory as the landlord.'}
+2025-09-02 23:55:41:494260 - [DEBUG]: Player 2 choose to pass
+2025-09-02 23:55:41:494402 - [DEBUG]: Final landlord is Player 3
+2025-09-02 23:55:41:494493 - [DEBUG]: Bidding END
+2025-09-03 09:35:01:298544 - [DEBUG]: Starting Doudizhu Game Emulator
+2025-09-03 09:35:01:298919 - [DEBUG]: Player Player 1 joined the game.
+2025-09-03 09:35:01:298963 - [DEBUG]: Current players: ['Player 1']
+2025-09-03 09:35:01:298993 - [DEBUG]: Player Player 2 joined the game.
+2025-09-03 09:35:01:299025 - [DEBUG]: Current players: ['Player 1', 'Player 2']
+2025-09-03 09:35:01:299051 - [DEBUG]: Player Player 3 joined the game.
+2025-09-03 09:35:01:299076 - [DEBUG]: Current players: ['Player 1', 'Player 2', 'Player 3']
+2025-09-03 09:35:01:299124 - [DEBUG]: Player 1 hands: [('Q', 1, 9), ('7', 1, 4), ('A', 2, 11), ('9', 3, 6), ('8', 1, 5), ('8', 3, 5), ('Q', 3, 9), ('J', 2, 8), ('A', 1, 11), ('5', 1, 2), ('5', 0, 2), ('K', 0, 10), ('10', 2, 7), ('7', 3, 4), ('J', 3, 8), ('J', 1, 8), ('5', 2, 2)]
+2025-09-03 09:35:01:299160 - [DEBUG]: Player 2 hands: [('10', 0, 7), ('7', 2, 4), ('6', 2, 3), ('3', 1, 0), ('A', 3, 11), ('J', 0, 8), ('3', 2, 0), ('9', 1, 6), ('Q', 2, 9), ('8', 2, 5), ('K', 3, 10), ('4', 2, 1), ('6', 1, 3), ('K', 2, 10), ('K', 1, 10), ('Red Joker', -1, 14), ('2', 1, 12)]
+2025-09-03 09:35:01:299188 - [DEBUG]: Player 3 hands: [('2', 2, 12), ('7', 0, 4), ('2', 3, 12), ('6', 3, 3), ('A', 0, 11), ('Q', 0, 9), ('4', 3, 1), ('10', 3, 7), ('9', 0, 6), ('Black Joker', -1, 13), ('10', 1, 7), ('8', 0, 5), ('5', 3, 2), ('3', 0, 0), ('3', 3, 0), ('2', 0, 12), ('4', 1, 1)]
+2025-09-03 09:35:01:299216 - [DEBUG]: Landlord cards: [('9', 2, 6), ('6', 0, 3), ('4', 0, 1)]
+2025-09-03 09:35:01:299245 - [DEBUG]: Bidding started
+
+2025-09-03 09:35:01:299275 - [DEBUG]: Player 1 is making a bidding decision.
+2025-09-03 09:35:01:299317 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+It is your turn to bid and you are the first bidder.
+Your cards are: [('Q', 1, 9), ('7', 1, 4), ('A', 2, 11), ('9', 3, 6), ('8', 1, 5), ('8', 3, 5), ('Q', 3, 9), ('J', 2, 8), ('A', 1, 11), ('5', 1, 2), ('5', 0, 2), ('K', 0, 10), ('10', 2, 7), ('7', 3, 4), ('J', 3, 8), ('J', 1, 8), ('5', 2, 2)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-03 09:35:03:070253 - [DEBUG]: current brain is: <function llama_3_3 at 0x1084a0cc0>
+2025-09-03 09:35:03:070633 - [DEBUG]: Player 1 bidding result: {"action": 1, "reason": "I am bidding 1 point because I think my cards have some strong combinations, such as pairs and high-ranking cards, but I'm not sure if I have enough to win, so I'll start with a low bid to see how the other players react."} 
+
+2025-09-03 09:35:03:070799 - [DEBUG]: current brain is: <function llama_3_3 at 0x1084a0cc0>
+2025-09-03 09:35:03:070895 - [DEBUG]: Player 1 bidding result: {"action": 1, "reason": "I am bidding 1 point because I think my cards have some strong combinations, such as pairs and high-ranking cards, but I'm not sure if I have enough to win, so I'll start with a low bid to see how the other players react."} 
+
+2025-09-03 09:35:03:070992 - [DEBUG]: extracted json string is: {"action": 1, "reason": "I am bidding 1 point because I think my cards have some strong combinations, such as pairs and high-ranking cards, but I'm not sure if I have enough to win, so I'll start with a low bid to see how the other players react."}
+2025-09-03 09:35:03:071081 - [DEBUG]: After parsing the bidding result: {'action': 1, 'reason': "I am bidding 1 point because I think my cards have some strong combinations, such as pairs and high-ranking cards, but I'm not sure if I have enough to win, so I'll start with a low bid to see how the other players react."}
+2025-09-03 09:35:03:071144 - [DEBUG]: Player 1 choose to bid with 1 point
+2025-09-03 09:35:03:071225 - [DEBUG]: Player 2 is making a bidding decision.
+2025-09-03 09:35:03:071327 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 2 bidder.
+The current highest bid is 1 points.
+Your cards are: [('10', 0, 7), ('7', 2, 4), ('6', 2, 3), ('3', 1, 0), ('A', 3, 11), ('J', 0, 8), ('3', 2, 0), ('9', 1, 6), ('Q', 2, 9), ('8', 2, 5), ('K', 3, 10), ('4', 2, 1), ('6', 1, 3), ('K', 2, 10), ('K', 1, 10), ('Red Joker', -1, 14), ('2', 1, 12)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-03 09:35:24:797588 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x108366980>
+2025-09-03 09:35:24:798358 - [DEBUG]: Player 2 bidding result: Okay, so I'm in the bidding phase for the 斗地主 game. I'm the second bidder, and the current highest bid is 1 point. My hand has 17 cards, and I need to decide whether to pass, bid 1, 2, or 3 points. 
+
+Looking at my cards: I have a Red Joker, which is the highest card in the game, and three Kings (K), which is pretty strong. Also, I have a pair of 3s and a pair of 6s, and a single 2. The rest are mixed, like A, Q, J, 10, 9, 8, 7, 4. 
+
+The Red Joker is a huge advantage because it's part of the unbeatable Joker Bomb if I can pair it with the Black Joker. But I don't see the Black Joker in my hand, so I can't form a Joker Bomb. However, the Red Joker alone is still powerful. With three Kings, I have a strong triple, and some pairs. 
+
+Since the current bid is 1, I could bid higher. Bidding 3 would make me the landlord immediately, but I have to consider if my hand is strong enough to take the risk. The landlord gets the bottom 3 cards, which could improve my hand, but if the farmers play well, I might lose more points. 
+
+I think my hand is decent but not super strong. I don't have many bombs (four of a kind), only the Red Joker stands out. But since the current bid is low (1), I can afford to bid 2 points to see if I can get the landlord role without going all in. If the next player bids higher, I can decide then, but as the second bidder, I don't want to pass and let the first player potentially take it cheaply.
+
+So, I'll bid 2 points. It's a moderate increase, showing confidence in my hand but not overcommitting. If the third player passes or bids lower, I might get the landlord role. If they bid higher, I can reassess, but at least I'm in the running.
+{ "action": 2, "reason": "I have a strong hand with the Red Joker, three Kings, and decent pairs. Bidding 2 points allows me to compete for the landlord role without overcommitting, considering the potential of the bottom cards to improve my hand further." } 
+
+2025-09-03 09:35:24:798846 - [DEBUG]: current brain is: <function deepseek_r1t_chimera at 0x108366980>
+2025-09-03 09:35:24:799153 - [DEBUG]: Player 2 bidding result: Okay, so I'm in the bidding phase for the 斗地主 game. I'm the second bidder, and the current highest bid is 1 point. My hand has 17 cards, and I need to decide whether to pass, bid 1, 2, or 3 points. 
+
+Looking at my cards: I have a Red Joker, which is the highest card in the game, and three Kings (K), which is pretty strong. Also, I have a pair of 3s and a pair of 6s, and a single 2. The rest are mixed, like A, Q, J, 10, 9, 8, 7, 4. 
+
+The Red Joker is a huge advantage because it's part of the unbeatable Joker Bomb if I can pair it with the Black Joker. But I don't see the Black Joker in my hand, so I can't form a Joker Bomb. However, the Red Joker alone is still powerful. With three Kings, I have a strong triple, and some pairs. 
+
+Since the current bid is 1, I could bid higher. Bidding 3 would make me the landlord immediately, but I have to consider if my hand is strong enough to take the risk. The landlord gets the bottom 3 cards, which could improve my hand, but if the farmers play well, I might lose more points. 
+
+I think my hand is decent but not super strong. I don't have many bombs (four of a kind), only the Red Joker stands out. But since the current bid is low (1), I can afford to bid 2 points to see if I can get the landlord role without going all in. If the next player bids higher, I can decide then, but as the second bidder, I don't want to pass and let the first player potentially take it cheaply.
+
+So, I'll bid 2 points. It's a moderate increase, showing confidence in my hand but not overcommitting. If the third player passes or bids lower, I might get the landlord role. If they bid higher, I can reassess, but at least I'm in the running.
+{ "action": 2, "reason": "I have a strong hand with the Red Joker, three Kings, and decent pairs. Bidding 2 points allows me to compete for the landlord role without overcommitting, considering the potential of the bottom cards to improve my hand further." } 
+
+2025-09-03 09:35:24:799470 - [DEBUG]: extracted json string is: { "action": 2, "reason": "I have a strong hand with the Red Joker, three Kings, and decent pairs. Bidding 2 points allows me to compete for the landlord role without overcommitting, considering the potential of the bottom cards to improve my hand further." }
+2025-09-03 09:35:24:799665 - [DEBUG]: After parsing the bidding result: {'action': 2, 'reason': 'I have a strong hand with the Red Joker, three Kings, and decent pairs. Bidding 2 points allows me to compete for the landlord role without overcommitting, considering the potential of the bottom cards to improve my hand further.'}
+2025-09-03 09:35:24:799800 - [DEBUG]: Player 2 choose to bid with 2 points
+2025-09-03 09:35:24:799938 - [DEBUG]: Player 3 is making a bidding decision.
+2025-09-03 09:35:24:800177 - [DEBUG]: User prompts: You are current in landlord bidding phase.
+You are the 3 bidder.
+The current highest bid is 2 points.
+Your cards are: [('2', 2, 12), ('7', 0, 4), ('2', 3, 12), ('6', 3, 3), ('A', 0, 11), ('Q', 0, 9), ('4', 3, 1), ('10', 3, 7), ('9', 0, 6), ('Black Joker', -1, 13), ('10', 1, 7), ('8', 0, 5), ('5', 3, 2), ('3', 0, 0), ('3', 3, 0), ('2', 0, 12), ('4', 1, 1)]
+Based on the information given above, you are giving your decision. 
+The response must be a raw JSON object, start with '{' and end with '}'. nothing else.
+The example response is given below for your reference:
+{ "action": 0, "reason": "How you made the action?" }
+The JSON response has to include the 'action' and 'reason' fields.
+The 'action' field can only be 0, 1, 2, or 3. 0 means you want to pass, 1 means you want to bid 1 point, and so on.
+The 'reason' field includes the details of your decision-making process in a few sentences.
+
+2025-09-03 09:35:26:117520 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x1084a0a40>
+2025-09-03 09:35:26:118221 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with three 2s and a Black Joker, which are powerful cards. This gives me a good chance to win as the landlord, especially with the extra 3 cards. Therefore, I will bid 3 points to secure the landlord role."
+}
+``` 
+
+2025-09-03 09:35:26:118460 - [DEBUG]: current brain is: <function gemini_2_5_flash at 0x1084a0a40>
+2025-09-03 09:35:26:118612 - [DEBUG]: Player 3 bidding result: ```json
+{
+  "action": 3,
+  "reason": "I have a strong hand with three 2s and a Black Joker, which are powerful cards. This gives me a good chance to win as the landlord, especially with the extra 3 cards. Therefore, I will bid 3 points to secure the landlord role."
+}
+``` 
+
+2025-09-03 09:35:26:118958 - [DEBUG]: extracted json string is: {
+  "action": 3,
+  "reason": "I have a strong hand with three 2s and a Black Joker, which are powerful cards. This gives me a good chance to win as the landlord, especially with the extra 3 cards. Therefore, I will bid 3 points to secure the landlord role."
+}
+2025-09-03 09:35:26:119223 - [DEBUG]: After parsing the bidding result: {'action': 3, 'reason': 'I have a strong hand with three 2s and a Black Joker, which are powerful cards. This gives me a good chance to win as the landlord, especially with the extra 3 cards. Therefore, I will bid 3 points to secure the landlord role.'}
+2025-09-03 09:35:26:119370 - [DEBUG]: Player 3 choose to bid with 3 points
+2025-09-03 09:35:26:119603 - [DEBUG]: Player 1 is making a bidding decision for the final round 
+2025-09-03 09:35:27:028230 - [DEBUG]: extracted json string is: {"action": 6, "reason": "I choose to bid 6 points which is double the current highest bid of 3 points, because I think my cards have a good potential to form strong combinations such as pairs, triples, and possibly a bomb, which could give me a high chance of winning the game and gaining more points as the landlord."}
+2025-09-03 09:35:27:029026 - [DEBUG]: After parsing the bidding result: {'action': 6, 'reason': 'I choose to bid 6 points which is double the current highest bid of 3 points, because I think my cards have a good potential to form strong combinations such as pairs, triples, and possibly a bomb, which could give me a high chance of winning the game and gaining more points as the landlord.'}
+2025-09-03 09:35:27:029384 - [DEBUG]: Player 1 final bid: 6 points
+2025-09-03 09:35:27:029632 - [DEBUG]: Final landlord is Player 1
+2025-09-03 09:35:27:029779 - [DEBUG]: Bidding END

@@ -8,6 +8,7 @@ import asyncio
 from openai import AsyncOpenAI, DefaultAioHttpClient
 from dotenv import load_dotenv
 
+# OpenRouter API settings, models, modify here to choose models you prefer.
 OPEN_ROUTER_URL = "https://openrouter.ai/api/v1"
 DEEP_SEEK_MODEL = "tngtech/deepseek-r1t-chimera:free"
 GEMINI_2_5_FLASH = "google/gemini-2.5-flash-image-preview:free"

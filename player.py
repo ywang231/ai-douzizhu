@@ -6,7 +6,6 @@
 
 import asyncio
 import json
-import random
 from typing import Callable
 from logger import Logging
 from prompt import Prompt
@@ -16,6 +15,7 @@ from utility import extract_json
 class Player:
 
     name: str
+    idx: int
     hand_: list
     cards_played_: list
     is_landlord_: bool
@@ -55,18 +55,14 @@ class Player:
         Logging(
             f"User prompts: {Prompt().get_bidding_prompt(bidding_history=bidding_history,
                                                          card_combination=self.hand_)}")
-        result = await self.brain_([
-            {
-                "role": "system",
-                "content": Prompt().get_system_prompt()
-            },
-            {
+        result = await self.brain_(Prompt().assembly_prompt(
+            user_prompt=Prompt().get_bidding_prompt(bidding_history=bidding_history,
+                                                    card_combination=self.hand_),
+            system_prompt=Prompt().get_system_prompt()
+        ))
+        Logging(f"current brain is: {self.brain_}")
 
-                "role": "user",
-                "content": Prompt().get_bidding_prompt(bidding_history=bidding_history,
-                                                       card_combination=self.hand_)
-            }
-        ])
+        Logging(f"{self.name} bidding result: {result} \n")
 
         Logging(f"current brain is: {self.brain_}")
         Logging(f"{self.name} bidding result: {result} \n")
@@ -87,21 +83,38 @@ class Player:
             Logging(f"{self.name} choose to pass")
         return final_bid
 
-    async def final_double_bid(self, final_score: int):
+    async def final_double_bid(self, bidding_history: list):
         '''Makes a final double bidding decision for the player.'''
         Logging(
             f"{self.name} is making a bidding decision for the final round ")
 
-        await asyncio.sleep(2)  # Simulate thinking time
-        bid = random.choice([0, final_score])
+        bid_res = await self.brain_(Prompt().assembly_prompt(
+            user_prompt=Prompt().get_doubling_prompt(
+                bidding_history=bidding_history,
+                card_combination=self.hand_),
+            system_prompt=Prompt().get_system_prompt()
+        ))
 
-        if bid > 0:
+        extracted_json = extract_json(bid_res.strip())
+
+        if extracted_json is None:
+            raise ValueError("Failed to extract JSON from result.")
+
+        Logging(f"extracted json string is: {extracted_json}")
+
+        json_result = json.loads(extracted_json)
+
+        Logging(f"After parsing the bidding result: {json_result}")
+
+        final_bid = json_result["action"]
+
+        if final_bid > 0:
             Logging(
-                f"{self.name} final bid: {bid} "
-                f"{'points' if bid > 1 else 'point'}")
+                f"{self.name} final bid: {final_bid} "
+                f"{'points' if final_bid > 1 else 'point'}")
         else:
             Logging(f"{self.name} choose to pass")
-        return bid
+        return final_bid
 
     async def play_card(self, previous_played_cards: list[tuple]):
         '''Plays a card from the player's hand.'''

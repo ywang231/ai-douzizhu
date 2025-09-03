@@ -5,7 +5,7 @@
 # pylint: disable=missing-class-docstring
 # pylint: disable=line-too-long
 
-# import json
+# from player import Player
 from logger import Logging
 
 
@@ -113,8 +113,35 @@ class Prompt:
         bprompt += "The 'reason' field should explain your decision-making process in a few sentences.\n"
         return bprompt
 
+    def assembly_prompt(self, user_prompt: str, system_prompt: str, assistant_data: str = "") -> list:
+        return [{"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+                {"role": "assistant", "content": assistant_data}]
+
+    # euWarningignore
+    def history_prompt(self, player_idx: int, players: list, history_bid: list, history_played: list) -> str:
+        prompt = "Here is the history of the landlord bidding:\n"
+
+        for idx, bidding in enumerate(history_bid):
+            if bidding[1] > 0:
+                prompt += f"Round {idx + 1}: {'You' if player_idx == bidding[0] else players[bidding[0]].name} bid {bidding[1]} points.\n"
+            else:
+                prompt += f"Round {idx + 1}: {'You' if player_idx == bidding[0] else players[bidding[0]].name} passed.\n"
+
+        if len(history_played) == 0:
+            return prompt
+
+        prompt += "Here is the history of played cards of each round:\n"
+        # History of played cards
+        for idx, play in enumerate(history_played):
+            prompt += f"Round {idx + 1}: {'You' if player_idx == play[0] else players[play[0]].name} played {play[1]}.\n"
+        return prompt
+
 
 if __name__ == "__main__":
     # Logging(Prompt().get_system_prompt())
-    Logging(Prompt().get_bidding_prompt(
-        [], [('3', 0, 0), ('3', 1, 0), ('3', 2, 0)]))
+    # Logging(Prompt().get_bidding_prompt(
+    #     [], [('3', 0, 0), ('3', 1, 0), ('3', 2, 0)]))
+
+    Logging(Prompt().history_prompt(0, ['Player 1', 'Player 2', 'Player 3'],
+                                    [('3', 0, 0), ('3', 1, 0), ('3', 2, 0)], [('3', 0, 0), ('3', 1, 0), ('3', 2, 0)]))

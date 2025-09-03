@@ -21,6 +21,7 @@ async def main():
     for i, brain in enumerate([llama_3_3, deepseek_r1t_chimera, gemini_2_5_flash]):
         player = Player(f"Player {i + 1}")
         player.brain = brain
+        player.idx = i  # Must have unique index for each player
         game.player_join(player)
 
     await game.run()

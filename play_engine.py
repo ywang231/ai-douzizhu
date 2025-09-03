@@ -41,19 +41,17 @@ class Doudizhu:
     def player_join(self, player: Player):
         Logging(f"Player {player.name} joined the game.")
         self.players_.append(player)
-        Logging(f"Current players: {[p.name for p in self.players_]}")
 
     async def _landlord_bidding(self):
-        assert len(self.players_) == 3, "There must be exactly 3 players."
-        # Random pick a player to start biding processing
         self.curr_idx_ = random.randint(0, len(self.players_) - 1)
         self.first_idx_ = self.curr_idx_
+        Logging(
+            f"Randomly pick up player {self.players_[self.curr_idx_].name} to start bidding")
 
-        Logging('Bidding started\n')
+        Logging('----------------Landlord Bidding started---------------------\n')
 
         MAX_BID_SCORE_OF_FIRST_ROUND = 3
         for idx in range(self.curr_idx_, self.curr_idx_ + len(self.players_)):
-
             self.curr_idx_ = idx % len(self.players_)
             curr_player = self.players_[self.curr_idx_]
 
@@ -70,9 +68,9 @@ class Doudizhu:
                 if bid_res >= MAX_BID_SCORE_OF_FIRST_ROUND:
                     break
 
-        # Someone bade, and it's not the first player
+        # Someone bids, and it's not the first player
         if self.potential_idx_ not in (-1, self.first_idx_):
-            final = await self.players_[self.first_idx_].final_double_bid(self.bid_score_ * 2)
+            final = await self.players_[self.first_idx_].final_double_bid(self.bidding_history_)
             self.bidding_history_.append((self.first_idx_, final))
             if final > 0:
                 self.potential_idx_ = self.first_idx_
@@ -84,7 +82,7 @@ class Doudizhu:
         else:
             Logging("No one bid, re-deal the cards and restart bidding")
 
-        Logging("Bidding END")
+        Logging('----------------Landlord Bidding END---------------------\n')
 
     async def _start_game(self):
         '''Starts the Doudizhu game.'''
@@ -135,5 +133,4 @@ class Doudizhu:
 if __name__ == "__main__":
     Logging("Game started")
     Logging(Doudizhu.create_deck())
-
     # asyncio.run(Doudizhu().run())
