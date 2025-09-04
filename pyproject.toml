@@ -7,5 +7,6 @@ requires-python = ">=3.13"
 dependencies = [
     "aiohttp>=3.12.15",
     "dotenv>=0.9.9",
-    "openai>=1.102.0",
+    "openai[aiohttp]>=1.102.0",
+    "pip>=25.2",
 ]
